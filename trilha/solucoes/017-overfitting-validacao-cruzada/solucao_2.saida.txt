@@ -1,0 +1,6 @@
+grau=1: erro_cv=0.8320
+grau=2: erro_cv=3.9714
+grau=3: erro_cv=0.1431
+grau=4: erro_cv=1.0343
+grau=5: erro_cv=3.5374
+melhor grau (k-fold): 3

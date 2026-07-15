@@ -1,0 +1,2 @@
+mediana: 50.5
+anomalias: [6]

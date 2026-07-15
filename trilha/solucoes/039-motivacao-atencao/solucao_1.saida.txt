@@ -1,0 +1,5 @@
+t= 0: influencia=1.000000
+t= 4: influencia=0.409600
+t= 8: influencia=0.167772
+t=12: influencia=0.068719
+primeiro t com influencia < 0.1: 11

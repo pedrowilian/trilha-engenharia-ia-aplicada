@@ -1,0 +1,4 @@
+grad ReLU:        [0. 0. 1. 1.]
+grad Leaky ReLU:  [0.01 0.01 1.   1.  ]
+neuronios sem gradiente (ReLU):       2
+neuronios sem gradiente (Leaky ReLU): 0

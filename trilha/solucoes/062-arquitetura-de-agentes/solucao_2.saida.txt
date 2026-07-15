@@ -1,0 +1,5 @@
+acao=incrementar -> estado=3
+acao=dobrar -> estado=6
+acao=incrementar -> estado=7
+memoria: [('incrementar', 3), ('dobrar', 6), ('incrementar', 7)]
+estado final: 7

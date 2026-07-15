@@ -1,0 +1,4 @@
+grad final (sigmoid): 3.483e-07
+grad final (ReLU):    1.000e+00
+sigmoid desapareceu (< 1e-3): True
+ReLU preservou (~1):          True

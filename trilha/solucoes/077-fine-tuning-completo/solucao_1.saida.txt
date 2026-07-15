@@ -1,0 +1,4 @@
+               RAG  <-  Politicas internas mudam todo mes
+       fine-tuning  <-  Classificar tickets num esquema fixo
+ RAG + fine-tuning  <-  Catalogo dinamico + tom de marca fixo
+prompt engineering  <-  Resumir texto colado pelo usuario

@@ -1,0 +1,4 @@
+ regra: utilidade=0.413
+  leve: utilidade=0.452
+ forte: utilidade=0.182
+escolhido: leve

@@ -1,0 +1,3 @@
+  grande: $4,500.00/mes
+ pequeno: $900.00/mes
+economia ao trocar para o pequeno: 80%

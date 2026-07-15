@@ -1,0 +1,4 @@
+lote= 1: custo/req=$0.011100
+lote= 5: custo/req=$0.003900
+lote=10: custo/req=$0.003000
+lote=50: custo/req=$0.002280

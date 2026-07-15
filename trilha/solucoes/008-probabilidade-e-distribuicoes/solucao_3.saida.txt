@@ -1,0 +1,2 @@
+P(palavra)        = 0.3400
+P(spam | palavra) = 0.8235

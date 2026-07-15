@@ -1,0 +1,9 @@
+cosseno:
+  A: cos=1.0000
+  B: cos=0.7071
+  C: cos=0.7071
+L2:
+  B: L2=1.0000
+  C: L2=1.4142
+  A: L2=12.7279
+top cosseno=A top L2=B

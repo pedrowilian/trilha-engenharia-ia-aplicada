@@ -1,0 +1,2 @@
+derivada aproximada = 3.00
+derivada exata = 3.00

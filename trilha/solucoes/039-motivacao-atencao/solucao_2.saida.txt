@@ -1,0 +1,5 @@
+(0,9) rnn=9 atencao=1
+(1,8) rnn=7 atencao=1
+(4,6) rnn=2 atencao=1
+maior caminho rnn: 9
+maior caminho atencao: 1

@@ -1,0 +1,2 @@
+corpus: a ia gera texto a ia ajuda pessoas a ia aprende
+gerado: a ia ajuda pessoas a ia

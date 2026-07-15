@@ -1,0 +1,10 @@
+grau=1: erro_teste=0.4840
+grau=2: erro_teste=0.5087
+grau=3: erro_teste=0.1272
+grau=4: erro_teste=0.1266
+grau=5: erro_teste=0.1056
+grau=6: erro_teste=0.1061
+grau=7: erro_teste=0.1581
+grau=8: erro_teste=0.1558
+grau=9: erro_teste=0.5304
+melhor grau (menor erro_teste): 5

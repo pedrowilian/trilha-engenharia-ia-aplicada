@@ -1,0 +1,34 @@
+# progresso.yaml — Estado de conclusão por lição da Trilha de Engenharia de IA Aplicada
+#
+# Este arquivo guarda o ESTADO MUTÁVEL do estudo (separado do conteúdo imutável
+# das lições). O índice (README.md) e o validador leem este arquivo para
+# renderizar o estado de cada lição e calcular o ponto de retomada (R11.3–R11.6).
+#
+# ── Estados válidos ──────────────────────────────────────────────────────────
+# Cada lição pode estar em EXATAMENTE UM dos três estados a seguir (R11.3):
+#   • nao_iniciada  — a lição ainda não foi começada
+#   • em_andamento  — a lição está sendo estudada no momento
+#   • concluida     — a lição foi finalizada
+#
+# ── Ausência de entrada ──────────────────────────────────────────────────────
+# A ausência de uma entrada para uma lição equivale ao estado "nao_iniciada"
+# (R11.4). Ou seja, qualquer ordinal não listado em `licoes:` abaixo é tratado
+# como "nao_iniciada" — não é necessário registrar explicitamente as lições não
+# iniciadas.
+#
+# ── Formato ──────────────────────────────────────────────────────────────────
+# As chaves são o ordinal global da lição com 3 dígitos, entre aspas (ex.: "013"),
+# e o valor é um dos três estados válidos. Exemplo:
+#
+#   licoes:
+#     "001": concluida
+#     "002": concluida
+#     "013": em_andamento
+#   # qualquer ordinal não listado é tratado como "nao_iniciada"
+#
+# ── Ponto de retomada ────────────────────────────────────────────────────────
+# O ponto de retomada (R11.6) é a primeira lição, na ordem de estudo numerada,
+# cujo estado seja "em_andamento" ou, na ausência desta, a primeira lição cujo
+# estado seja "nao_iniciada".
+
+licoes: {}

@@ -1,0 +1,2 @@
+com_mcp: rag=1 agente=1 mcp=2 completo=True ausentes=[]
+sem_mcp: rag=1 agente=1 mcp=0 completo=False ausentes=['mcp']

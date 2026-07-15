@@ -1,0 +1,2 @@
+orcamento=800: iteracoes=2 tokens=600 -> estourou orcamento
+orcamento=1500: iteracoes=5 tokens=1500 -> concluiu

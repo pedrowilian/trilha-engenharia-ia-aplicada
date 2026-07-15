@@ -1,0 +1,5 @@
+merge 1: 't'+'</w>' (freq 9)
+merge 2: 's'+'t</w>' (freq 9)
+merge 3: 'e'+'st</w>' (freq 9)
+merge 4: 'o'+'w' (freq 7)
+merges: ['t</w>', 'st</w>', 'est</w>', 'ow']

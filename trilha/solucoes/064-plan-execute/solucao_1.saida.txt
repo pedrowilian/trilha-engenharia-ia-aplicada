@@ -1,0 +1,4 @@
+1. testar
+2. build
+3. publicar
+total de passos: 3

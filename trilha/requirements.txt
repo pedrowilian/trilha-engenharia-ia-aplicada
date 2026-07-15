@@ -1,0 +1,15 @@
+# Dependências de ESTUDO da Trilha (separadas das deps do validador em
+# tools/requirements.txt). São usadas pelos Exemplos_Resolvidos/soluções em
+# Python e pela geração reprodutível de figuras das lições.
+#
+# Instalar com:
+#   pip install -r trilha/requirements.txt
+# (em ambientes "externally managed", use:
+#   pip install --user --break-system-packages -r trilha/requirements.txt)
+
+# Computação numérica usada nos exemplos e soluções de M00 em diante.
+numpy>=1.26,<3.0
+
+# Geração reprodutível das figuras das lições (backend Agg, sem interatividade).
+# Ver: trilha/tools/figuras/gerar_figuras_m00.py
+matplotlib>=3.7,<4.0

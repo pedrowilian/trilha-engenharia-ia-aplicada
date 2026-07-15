@@ -1,0 +1,4 @@
+lambda=  0.0: w=[1.0000, 2.0000] norma_L2=2.2361
+lambda=  5.0: w=[0.3889, 2.0370] norma_L2=2.0738
+lambda= 50.0: w=[0.2473, 1.7133] norma_L2=1.7310
+norma decresce com lambda: True

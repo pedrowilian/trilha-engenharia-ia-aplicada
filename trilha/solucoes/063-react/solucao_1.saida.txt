@@ -1,0 +1,4 @@
+1. Thought: Localizar a capital | Action: kb[capital_franca] | Observation: Paris
+2. Thought: Contar as letras | Action: tamanho[Paris] | Observation: 5
+3. Thought: Tenho a resposta | Action: final[5] | Observation: -
+total de passos: 3

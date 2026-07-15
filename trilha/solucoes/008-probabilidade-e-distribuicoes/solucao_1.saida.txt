@@ -1,0 +1,3 @@
+|Omega|              = 36
+favoraveis (soma=7)  = 6
+P(soma=7)            = 0.1667

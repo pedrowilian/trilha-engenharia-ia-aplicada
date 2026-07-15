@@ -1,0 +1,4 @@
+A: treino=0.40 val=0.42 -> underfitting
+B: treino=0.03 val=0.25 -> overfitting
+C: treino=0.07 val=0.10 -> bom ajuste
+D: treino=0.30 val=0.31 -> underfitting

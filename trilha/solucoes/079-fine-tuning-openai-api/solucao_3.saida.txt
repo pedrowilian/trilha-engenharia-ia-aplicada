@@ -1,0 +1,7 @@
+passo 1: train_loss=2.0
+passo 2: train_loss=1.6
+passo 3: train_loss=1.28
+passo 4: train_loss=1.024
+status final: succeeded
+modelo ajustado: ft:base-mini:org::abc123
+[ft:base-mini:org::abc123] -> OLA MUNDO

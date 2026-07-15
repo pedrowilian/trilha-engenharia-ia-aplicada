@@ -1,0 +1,4 @@
+n_treino= 6: erro_treino=1.0303 erro_val=2.0466 lacuna=1.0162
+n_treino=20: erro_treino=0.7608 erro_val=0.7580 lacuna=-0.0028
+n_treino=80: erro_treino=0.7681 erro_val=0.6765 lacuna=-0.0916
+lacuna encolhe com mais dados: True

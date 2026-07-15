@@ -1,0 +1,4 @@
+exato: T
+ef=1: achado=C comparacoes=4 acerto=False
+ef=2: achado=T comparacoes=5 acerto=True
+ef=3: achado=T comparacoes=5 acerto=True

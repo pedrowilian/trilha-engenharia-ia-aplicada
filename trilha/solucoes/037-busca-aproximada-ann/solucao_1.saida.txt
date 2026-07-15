@@ -1,0 +1,3 @@
+aprox=['d3', 'd1', 'd7'] exato=['d3', 'd1', 'd7'] recall@3=1.0000
+aprox=['d3', 'd1', 'd9'] exato=['d3', 'd1', 'd7'] recall@3=0.6667
+aprox=['d9', 'd8', 'd5'] exato=['d3', 'd1', 'd7'] recall@3=0.0000

@@ -1,0 +1,5 @@
+x=[0 0] classe=0 alvo=0
+x=[0 1] classe=1 alvo=1
+x=[1 0] classe=1 alvo=1
+x=[1 1] classe=0 alvo=0
+acertos=4/4 resolveu o XOR: True

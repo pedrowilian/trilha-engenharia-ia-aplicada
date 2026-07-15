@@ -1,0 +1,3 @@
+sem padrao: 24
+com mcp: 10
+reducao: 14

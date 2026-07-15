@@ -1,0 +1,6 @@
+ordem de montagem (dependencias primeiro):
+  1. rag
+  2. agente
+  3. servidor_mcp
+  4. cliente_mcp
+fluxo da requisicao: cliente_mcp -> servidor_mcp -> agente -> rag

@@ -1,0 +1,3 @@
+n_palavras: 4
+maiusculas: ENGENHARIA DE IA APLICADA
+invertida: aplicada ia de engenharia

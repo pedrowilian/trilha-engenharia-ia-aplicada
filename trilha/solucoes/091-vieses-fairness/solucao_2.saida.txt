@@ -1,0 +1,2 @@
+grupo A: TPR=0.67 FPR=0.00
+grupo B: TPR=1.00 FPR=0.67

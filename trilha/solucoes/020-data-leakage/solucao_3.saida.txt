@@ -1,0 +1,3 @@
+erro split aleatorio (otimista): 476.10
+erro split temporal (honesto):   3354.71
+split temporal e mais conservador: True

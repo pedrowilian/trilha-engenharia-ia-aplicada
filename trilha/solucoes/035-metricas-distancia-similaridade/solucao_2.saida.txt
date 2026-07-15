@@ -1,0 +1,4 @@
+ranking cosseno: ['A', 'B', 'C']
+ranking L2:      ['B', 'C', 'A']
+top cosseno=A top L2=B
+os rankings discordam: True

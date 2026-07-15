@@ -1,0 +1,3 @@
+custo por requisicao: $0.002100
+custo diario: $42.00
+custo mensal (30 dias): $1260.00

@@ -1,0 +1,4 @@
+vocabulario: ['cachorro', 'corre', 'dorme', 'gato', 'o']
+'o gato dorme' -> [0, 0, 1, 1, 1]
+'o cachorro corre' -> [1, 1, 0, 0, 1]
+'o gato corre' -> [0, 1, 0, 1, 1]

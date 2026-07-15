@@ -1,0 +1,9 @@
+Contexto:
+[d1] o plano basico custa 10 reais por mes
+[d2] o plano pro custa 30 reais por mes
+
+Pergunta: quanto custa o plano basico
+Resposta:
+---
+fontes: ['d1', 'd2']
+resposta: o plano basico custa 10 reais por mes

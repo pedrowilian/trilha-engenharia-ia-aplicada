@@ -1,0 +1,3 @@
+autenticado: False
+rota: fluxo_direto
+modelo: leve

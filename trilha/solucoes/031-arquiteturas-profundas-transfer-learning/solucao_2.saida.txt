@@ -1,0 +1,3 @@
+fine-tuning completo  : treinaveis= 23020490 fracao=100.0000%
+feature extraction    : treinaveis=    20490 fracao=0.0890%
+fine-tuning parcial   : treinaveis=  2020490 fracao=8.7769%

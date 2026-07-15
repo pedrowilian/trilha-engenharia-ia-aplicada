@@ -1,0 +1,3 @@
+negociadas: ['resources', 'tools']
+usa resources? True
+usa roots? False

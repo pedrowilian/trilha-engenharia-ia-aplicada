@@ -1,0 +1,1 @@
+{"id": 10, "jsonrpc": "2.0", "method": "tools/call", "params": {"arguments": {"a": 6, "b": 7}, "name": "multiplicar"}}

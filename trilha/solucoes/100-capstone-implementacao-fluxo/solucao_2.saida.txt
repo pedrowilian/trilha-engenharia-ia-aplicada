@@ -1,0 +1,3 @@
+ferramenta=buscar obs=resultado para 'Como redefinir a senha?'
+ferramenta=contar obs=3 documentos na base
+ferramenta=buscar obs=resultado para 'Onde baixo a fatura?'

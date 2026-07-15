@@ -1,0 +1,5 @@
+job: ftjob-0042 modelo base: base-mini status: validating_files
+  n_epochs = 3
+  learning_rate_multiplier = 0.2
+  batch_size = 8
+passos estimados: 21

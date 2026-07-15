@@ -1,0 +1,6 @@
+theta inicial: 0.0000 perda inicial: 49.0000
+passo  1: theta=1.4000 perda=31.3600
+passo 10: theta=6.2484 perda=0.5649
+passo 30: theta=6.9913 perda=0.0001
+passo 60: theta=7.0000 perda=0.0000
+theta final: 7.0000 perda final: 0.0000

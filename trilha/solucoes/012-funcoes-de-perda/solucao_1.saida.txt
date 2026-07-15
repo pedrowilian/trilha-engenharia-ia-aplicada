@@ -1,0 +1,3 @@
+pred_a: MSE=1.0000 MAE=1.0000
+pred_b: MSE=20.0000 MAE=2.0000
+MSE pune mais o outlier: True

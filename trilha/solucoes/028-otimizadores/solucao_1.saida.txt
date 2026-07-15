@@ -1,0 +1,6 @@
+passo 1: v=1.0000
+passo 2: v=1.9000
+passo 3: v=2.7100
+passo 4: v=3.4390
+passo 5: v=4.0951
+limite teorico 1/(1-beta) = 10.0000

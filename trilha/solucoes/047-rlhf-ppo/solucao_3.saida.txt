@@ -1,0 +1,5 @@
+i=0: ratio=1.30 A=+1.0 L_clip=+1.2000
+i=1: ratio=0.70 A=+1.0 L_clip=+0.7000
+i=2: ratio=1.05 A=-1.0 L_clip=-1.0500
+i=3: ratio=0.90 A=-1.0 L_clip=-0.9000
+objetivo PPO (media) = -0.0125

@@ -1,0 +1,3 @@
+Razao de variancia explicada: [0.8, 0.2, 0.0]
+Variancia acumulada: [0.8, 1.0, 1.0]
+Componentes para >=90% da variancia: 2

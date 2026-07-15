@@ -1,0 +1,4 @@
+desvio-padrao scores brutos:    5.6314
+desvio-padrao scores escalados: 0.7039
+peso maximo sem escala:  0.9997
+peso maximo com escala:  0.5314

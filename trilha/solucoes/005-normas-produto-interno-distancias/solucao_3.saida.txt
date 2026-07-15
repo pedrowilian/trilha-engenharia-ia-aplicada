@@ -1,0 +1,7 @@
+cos(ref, x)  = 0.8000
+cos(ref, 5x) = 0.8000
+dot(ref, x)  = 4.0000
+dot(ref, 5x) = 20.0000
+L2(ref, x)   = 1.4142
+L2(ref, 5x)  = 9.4868
+cosseno invariante a escala

@@ -1,0 +1,5 @@
+requisicoes: 10
+taxa de erro: 0.1000 (SLO <= 0.10)
+p95 latencia: 480 ms (SLO <= 500 ms)
+viola SLO erro: False
+viola SLO p95: False

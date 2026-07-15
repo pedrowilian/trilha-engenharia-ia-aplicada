@@ -1,0 +1,3 @@
+'bom dia' -> buscar=False
+'qual o preco do plano' -> buscar=True
+'obrigado' -> buscar=False

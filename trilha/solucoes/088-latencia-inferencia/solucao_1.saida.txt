@@ -1,0 +1,4 @@
+TTFT: 250 ms
+latencia total (sem streaming): 3250 ms
+latencia percebida (streaming, ate 1o token): 250 ms
+reducao percebida: 92.3%

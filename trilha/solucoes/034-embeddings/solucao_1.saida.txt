@@ -1,0 +1,4 @@
+   felino: 0.9980
+ cachorro: 0.9838
+    carro: 0.0122
+mais proximo de gato -> felino

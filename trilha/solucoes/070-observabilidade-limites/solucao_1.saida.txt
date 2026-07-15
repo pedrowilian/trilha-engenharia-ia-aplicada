@@ -1,0 +1,4 @@
+[1] inicio: tarefa
+[2] tool_call: calc
+[3] fim: ok
+total de eventos: 3

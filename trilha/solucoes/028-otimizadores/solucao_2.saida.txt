@@ -1,0 +1,3 @@
+gradiente:     [1.e+02 1.e-02]
+passo efetivo: [0.031623 0.031623]
+passos quase iguais: True

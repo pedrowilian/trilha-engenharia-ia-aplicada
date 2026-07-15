@@ -1,0 +1,5 @@
+brutos: 6
+limpos: 2
+removidos: 4
+- Defina overfitting. | Decorar o treino.
+- O que e um token? | Unidade de texto.

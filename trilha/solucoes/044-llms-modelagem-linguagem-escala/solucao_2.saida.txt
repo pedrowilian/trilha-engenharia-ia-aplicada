@@ -1,0 +1,5 @@
+passo 0: p_correto=0.60  -log p=0.5108
+passo 1: p_correto=0.40  -log p=0.9163
+passo 2: p_correto=0.50  -log p=0.6931
+cross-entropy (nats) = 0.7068
+perplexidade         = 2.0274

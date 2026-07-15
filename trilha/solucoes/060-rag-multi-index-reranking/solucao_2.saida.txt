@@ -1,0 +1,3 @@
+estagio1 (N=4): ['d1', 'd2', 'd5', 'd3']
+estagio2 (k=2): [('d1', 7), ('d2', 3)]
+docs avaliados no rerank: 4 de 6

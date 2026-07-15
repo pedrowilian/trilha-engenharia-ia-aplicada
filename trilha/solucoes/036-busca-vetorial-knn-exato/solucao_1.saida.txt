@@ -1,0 +1,6 @@
+consulta: [1.0, 1.0]
+doc_a: dist=2.2361
+doc_b: dist=1.0000
+doc_c: dist=5.0000
+doc_d: dist=1.0000
+mais proximo: doc_b

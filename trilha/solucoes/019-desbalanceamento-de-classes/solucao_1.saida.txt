@@ -1,0 +1,5 @@
+acuracia: 0.9500
+recall positivo: 0.0000
+recall negativo: 1.0000
+acuracia balanceada: 0.5000
+acuracia engana: True

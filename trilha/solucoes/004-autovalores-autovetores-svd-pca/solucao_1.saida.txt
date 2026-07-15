@@ -1,0 +1,5 @@
+Autovalores: [3.0, 5.0]
+Traco=8.0000 soma=8.0000
+Det=15.0000 produto=15.0000
+residuo maximo: 0.000000
+OK

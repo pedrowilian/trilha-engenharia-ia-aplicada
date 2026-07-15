@@ -1,0 +1,2 @@
+ok
+erros: tipo invalido: idade, faltando: ativo

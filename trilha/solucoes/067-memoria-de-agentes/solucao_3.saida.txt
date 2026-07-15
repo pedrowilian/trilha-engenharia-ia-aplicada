@@ -1,0 +1,2 @@
+python e linguagem: 1.000
+cobra python: 0.970

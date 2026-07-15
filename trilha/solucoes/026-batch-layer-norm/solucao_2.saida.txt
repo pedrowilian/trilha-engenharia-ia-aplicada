@@ -1,0 +1,4 @@
+media da saida: [ 5. -2.]
+std da saida:   [3.  0.5]
+media ~= beta: True
+std ~= |gamma|: True

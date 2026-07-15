@@ -1,0 +1,5 @@
+login: ok
+pagamento: falhou
+pagamento_2fa: ok
+recibo: ok
+plano final: ['login', 'pagamento_2fa', 'recibo']

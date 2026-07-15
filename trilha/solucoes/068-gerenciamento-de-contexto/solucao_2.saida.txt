@@ -1,0 +1,3 @@
+sistema: assistente util
+incluidas: ['passo dois meio', 'passo tres final']
+tokens usados: 8

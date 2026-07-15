@@ -1,0 +1,4 @@
+ montanha: 0.9854
+    carro: 0.5760
+ cachorro: 0.3932
+melhor match: montanha

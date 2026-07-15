@@ -1,0 +1,1315 @@
+# Mapa de Competências — fonte estruturada (validável)
+#
+# Liga cada resultado de aprendizagem (derivado dos `objetivos_de_aprendizagem`
+# das lições) a ao menos uma exigência do cargo de AI Engineer.
+# A visão legível correspondente é gerada em `mapa-de-competencias.md`.
+#
+# Regras de completude (checadas pelo validador):
+#   - Sem outcomes órfãos: todo resultado tem >= 1 exigencia e uma licao válida (R8.1, R8.6).
+#   - Cobertura das 8 exigências de mercado (categoria `mercado-8`), cada uma com >= 1 resultado (R8.2).
+#   - Cobertura dos 4 fundamentos clássicos de entrevista (categoria `ml-classico-4`), cada um com >= 1 resultado (R8.3).
+#   - Sem exigências sem lição: toda exigência é entregue por >= 1 lição (R8.5).
+#   - Referência cruzada: o campo `competencias` no front-matter das lições referencia as exigências entregues (R8.4).
+
+exigencias_mercado:            # 8 exigências de mercado (R8.2)
+  - id: req-llm-apps
+    descricao: "Desenvolvimento de aplicações LLM"
+    categoria: mercado-8
+  - id: req-rag
+    descricao: "Engenharia de pipelines RAG"
+    categoria: mercado-8
+  - id: req-agentes
+    descricao: "Construção de agentes"
+    categoria: mercado-8
+  - id: req-prompt
+    descricao: "Prompt engineering"
+    categoria: mercado-8
+  - id: req-deploy-prod
+    descricao: "Deploy em produção"
+    categoria: mercado-8
+  - id: req-evals
+    descricao: "Frameworks de avaliação"
+    categoria: mercado-8
+  - id: req-custo-inferencia
+    descricao: "Gerenciamento de custo de inferência sob alto volume concorrente"
+    categoria: mercado-8
+  - id: req-verificacao-saidas
+    descricao: "Verificação de saídas"
+    categoria: mercado-8
+  # 4 fundamentos clássicos de ML cobrados em entrevista (R8.3)
+  - id: req-vies-variancia
+    descricao: "Viés-variância"
+    categoria: ml-classico-4
+  - id: req-calibracao
+    descricao: "Calibração"
+    categoria: ml-classico-4
+  - id: req-data-leakage
+    descricao: "Data leakage"
+    categoria: ml-classico-4
+  - id: req-gradient-explosion
+    descricao: "Gradient explosion"
+    categoria: ml-classico-4
+
+# Resultados de aprendizagem: um por objetivo de aprendizagem de cada lição (R8.1).
+# Gerado a partir do front-matter das 104 lições (tarefa 25.1).
+resultados_de_aprendizagem:
+  - id: out-001-1
+    descricao: "Representar dados do mundo real como vetores e operar soma e multiplicação por escalar"
+    licao: licao-001-vetores-e-espacos-vetoriais
+    exigencias: [req-llm-apps]
+  - id: out-001-2
+    descricao: "Decidir se um vetor é combinação linear de outros e calcular os coeficientes"
+    licao: licao-001-vetores-e-espacos-vetoriais
+    exigencias: [req-llm-apps]
+  - id: out-001-3
+    descricao: "Verificar independência linear e expressar um vetor em coordenadas de uma base"
+    licao: licao-001-vetores-e-espacos-vetoriais
+    exigencias: [req-llm-apps]
+  - id: out-002-1
+    descricao: "Construir matrizes, identificar sua forma e calcular a transposta e a identidade"
+    licao: licao-002-matrizes-e-operacoes
+    exigencias: [req-llm-apps]
+  - id: out-002-2
+    descricao: "Multiplicar matrizes e matriz por vetor, reconhecendo a não-comutatividade"
+    licao: licao-002-matrizes-e-operacoes
+    exigencias: [req-llm-apps]
+  - id: out-002-3
+    descricao: "Calcular a inversa e usá-la para resolver um sistema linear A x = b"
+    licao: licao-002-matrizes-e-operacoes
+    exigencias: [req-llm-apps]
+  - id: out-003-1
+    descricao: "Interpretar a multiplicação matriz-vetor como uma transformação linear do espaço e verificar a propriedade de linearidade em Python"
+    licao: licao-003-transformacoes-lineares
+    exigencias: [req-llm-apps]
+  - id: out-003-2
+    descricao: "Reconhecer rotação, escala e cisalhamento a partir da matriz e aplicá-las a pontos do plano"
+    licao: licao-003-transformacoes-lineares
+    exigencias: [req-llm-apps]
+  - id: out-003-3
+    descricao: "Compor transformações via produto de matrizes e explicar por que a ordem importa"
+    licao: licao-003-transformacoes-lineares
+    exigencias: [req-llm-apps]
+  - id: out-004-1
+    descricao: "Explicar autovalores e autovetores como as direções invariantes de uma transformação linear e verificar a equação A·v = λ·v em Python"
+    licao: licao-004-autovalores-autovetores-svd-pca
+    exigencias: [req-llm-apps, req-rag]
+  - id: out-004-2
+    descricao: "Descrever a intuição da SVD como decomposição em rotação–escala–rotação e medir o erro de aproximação de baixo posto"
+    licao: licao-004-autovalores-autovetores-svd-pca
+    exigencias: [req-llm-apps, req-rag]
+  - id: out-004-3
+    descricao: "Aplicar PCA para reduzir a dimensionalidade preservando a maior variância e relacionar isso à compressão de embeddings"
+    licao: licao-004-autovalores-autovetores-svd-pca
+    exigencias: [req-llm-apps, req-rag]
+  - id: out-005-1
+    descricao: "Calcular as normas L1, L2 e L-infinito de um vetor e normalizá-lo pela norma L2"
+    licao: licao-005-normas-produto-interno-distancias
+    exigencias: [req-llm-apps]
+  - id: out-005-2
+    descricao: "Calcular o produto interno e a similaridade do cosseno e interpretar o ângulo entre vetores"
+    licao: licao-005-normas-produto-interno-distancias
+    exigencias: [req-llm-apps]
+  - id: out-005-3
+    descricao: "Comparar distância euclidiana e similaridade do cosseno e justificar o uso do cosseno em busca semântica"
+    licao: licao-005-normas-produto-interno-distancias
+    exigencias: [req-llm-apps]
+  - id: out-006-1
+    descricao: "Calcular a taxa de variação média de uma função em um intervalo"
+    licao: licao-006-funcoes-limites-derivadas
+    exigencias: [req-gradient-explosion]
+  - id: out-006-2
+    descricao: "Aproximar a derivada de uma função como o limite da razão incremental e compará-la à derivada analítica"
+    licao: licao-006-funcoes-limites-derivadas
+    exigencias: [req-gradient-explosion]
+  - id: out-006-3
+    descricao: "Interpretar a derivada como taxa de variação instantânea e explicar o que significa otimizar uma função"
+    licao: licao-006-funcoes-limites-derivadas
+    exigencias: [req-gradient-explosion]
+  - id: out-007-1
+    descricao: "Calcular derivadas parciais de funções de várias variáveis fixando as demais"
+    licao: licao-007-derivadas-parciais-gradiente-regra-da-cadeia
+    exigencias: [req-gradient-explosion]
+  - id: out-007-2
+    descricao: "Construir o vetor gradiente e interpretá-lo como a direção de maior crescimento"
+    licao: licao-007-derivadas-parciais-gradiente-regra-da-cadeia
+    exigencias: [req-gradient-explosion]
+  - id: out-007-3
+    descricao: "Aplicar a regra da cadeia a funções compostas e relacioná-la à base do backpropagation"
+    licao: licao-007-derivadas-parciais-gradiente-regra-da-cadeia
+    exigencias: [req-gradient-explosion]
+  - id: out-008-1
+    descricao: "Calcular probabilidades de eventos usando os axiomas e a regra da soma (inclusão-exclusão)"
+    licao: licao-008-probabilidade-e-distribuicoes
+    exigencias: [req-calibracao]
+  - id: out-008-2
+    descricao: "Distinguir variáveis aleatórias discretas e contínuas e calcular esperança e variância a partir da distribuição"
+    licao: licao-008-probabilidade-e-distribuicoes
+    exigencias: [req-calibracao]
+  - id: out-008-3
+    descricao: "Aplicar o teorema de Bayes para atualizar uma crença a priori diante de uma evidência observada"
+    licao: licao-008-probabilidade-e-distribuicoes
+    exigencias: [req-calibracao]
+  - id: out-008-4
+    descricao: "Explicar por que modelos de Machine Learning produzem saídas probabilísticas em vez de respostas determinísticas"
+    licao: licao-008-probabilidade-e-distribuicoes
+    exigencias: [req-calibracao]
+  - id: out-009-1
+    descricao: "Calcular medidas de tendência central e de dispersão (média, mediana, variância e desvio padrão) de uma amostra"
+    licao: licao-009-estatistica-descritiva-e-inferencia
+    exigencias: [req-evals]
+  - id: out-009-2
+    descricao: "Distinguir variância populacional de variância amostral e justificar o divisor n-1"
+    licao: licao-009-estatistica-descritiva-e-inferencia
+    exigencias: [req-evals]
+  - id: out-009-3
+    descricao: "Estimar o erro padrão da média e construir um intervalo de confiança de 95% via aproximação normal"
+    licao: licao-009-estatistica-descritiva-e-inferencia
+    exigencias: [req-evals]
+  - id: out-009-4
+    descricao: "Conduzir um teste de hipótese de duas proporções e interpretar o p-valor em um teste A/B"
+    licao: licao-009-estatistica-descritiva-e-inferencia
+    exigencias: [req-evals]
+  - id: out-010-1
+    descricao: "Calcular a log-verossimilhança de um conjunto de dados e encontrar o estimador de máxima verossimilhança (MLE)"
+    licao: licao-010-verossimilhanca-entropia-kl
+    exigencias: [req-calibracao]
+  - id: out-010-2
+    descricao: "Calcular a entropia de uma distribuição e a entropia cruzada entre duas distribuições"
+    licao: licao-010-verossimilhanca-entropia-kl
+    exigencias: [req-calibracao]
+  - id: out-010-3
+    descricao: "Calcular a divergência KL e demonstrar numericamente a identidade H(p,q) = H(p) + KL(p||q)"
+    licao: licao-010-verossimilhanca-entropia-kl
+    exigencias: [req-calibracao]
+  - id: out-010-4
+    descricao: "Explicar como verossimilhança, entropia cruzada e KL dão origem às funções de perda modernas de ML"
+    licao: licao-010-verossimilhanca-entropia-kl
+    exigencias: [req-calibracao]
+  - id: out-011-1
+    descricao: "Definir machine learning e distinguir os paradigmas supervisionado, não-supervisionado e por reforço"
+    licao: licao-011-o-que-e-ml
+    exigencias: [req-vies-variancia]
+  - id: out-011-2
+    descricao: "Implementar em Python um exemplo mínimo de cada paradigma (1-NN, k-means, bandit)"
+    licao: licao-011-o-que-e-ml
+    exigencias: [req-vies-variancia]
+  - id: out-011-3
+    descricao: "Escolher o paradigma adequado a partir do formato dos dados e do objetivo"
+    licao: licao-011-o-que-e-ml
+    exigencias: [req-vies-variancia]
+  - id: out-012-1
+    descricao: "Definir função de perda e seu papel no treinamento supervisionado"
+    licao: licao-012-funcoes-de-perda
+    exigencias: [req-vies-variancia]
+  - id: out-012-2
+    descricao: "Implementar MSE para regressão e cross-entropy (binária e multiclasse) para classificação"
+    licao: licao-012-funcoes-de-perda
+    exigencias: [req-vies-variancia]
+  - id: out-012-3
+    descricao: "Justificar a escolha da perda a partir do tipo de problema e da conexão com verossimilhança"
+    licao: licao-012-funcoes-de-perda
+    exigencias: [req-vies-variancia]
+  - id: out-013-1
+    descricao: "Derivar a regra de atualização de parâmetros do gradient descent"
+    licao: licao-013-gradient-descent
+    exigencias: [req-vies-variancia, req-gradient-explosion]
+  - id: out-013-2
+    descricao: "Implementar batch, mini-batch e SGD em Python e comparar a convergência"
+    licao: licao-013-gradient-descent
+    exigencias: [req-vies-variancia, req-gradient-explosion]
+  - id: out-013-3
+    descricao: "Diagnosticar o efeito da taxa de aprendizado sobre a convergência"
+    licao: licao-013-gradient-descent
+    exigencias: [req-vies-variancia, req-gradient-explosion]
+  - id: out-014-1
+    descricao: "Explicar backpropagation como aplicação da regra da cadeia em um grafo computacional"
+    licao: licao-014-backpropagation
+    exigencias: [req-vies-variancia]
+  - id: out-014-2
+    descricao: "Calcular gradientes via forward e backward pass em Python para um grafo e um neurônio"
+    licao: licao-014-backpropagation
+    exigencias: [req-vies-variancia]
+  - id: out-014-3
+    descricao: "Validar gradientes analíticos contra a aproximação numérica (gradient checking)"
+    licao: licao-014-backpropagation
+    exigencias: [req-vies-variancia]
+  - id: out-015-1
+    descricao: "Explicar como a regularização combate o overfitting penalizando a complexidade"
+    licao: licao-015-regularizacao
+    exigencias: [req-vies-variancia]
+  - id: out-015-2
+    descricao: "Implementar regularização L2 (ridge) e L1 (esparsidade via soft-thresholding) em Python"
+    licao: licao-015-regularizacao
+    exigencias: [req-vies-variancia]
+  - id: out-015-3
+    descricao: "Aplicar dropout e early stopping como técnicas de regularização no treinamento"
+    licao: licao-015-regularizacao
+    exigencias: [req-vies-variancia]
+  - id: out-016-1
+    descricao: "Enunciar a decomposição do erro esperado em viés², variância e ruído irredutível"
+    licao: licao-016-vies-variancia
+    exigencias: [req-vies-variancia]
+  - id: out-016-2
+    descricao: "Relacionar complexidade do modelo a viés (underfitting) e variância (overfitting)"
+    licao: licao-016-vies-variancia
+    exigencias: [req-vies-variancia]
+  - id: out-016-3
+    descricao: "Estimar empiricamente viés e variância em Python e identificar a complexidade ótima"
+    licao: licao-016-vies-variancia
+    exigencias: [req-vies-variancia]
+  - id: out-017-1
+    descricao: "Diagnosticar overfitting e underfitting a partir dos erros de treino e validação"
+    licao: licao-017-overfitting-validacao-cruzada
+    exigencias: [req-vies-variancia]
+  - id: out-017-2
+    descricao: "Implementar validação cruzada k-fold do zero para selecionar hiperparâmetros"
+    licao: licao-017-overfitting-validacao-cruzada
+    exigencias: [req-vies-variancia]
+  - id: out-017-3
+    descricao: "Interpretar curvas de aprendizado para decidir entre mais dados e mais/menos capacidade"
+    licao: licao-017-overfitting-validacao-cruzada
+    exigencias: [req-vies-variancia]
+  - id: out-018-1
+    descricao: "Definir calibração e distinguir acurácia de confiabilidade das probabilidades"
+    licao: licao-018-calibracao
+    exigencias: [req-calibracao, req-vies-variancia]
+  - id: out-018-2
+    descricao: "Construir um diagrama de confiabilidade e calcular o Expected Calibration Error (ECE)"
+    licao: licao-018-calibracao
+    exigencias: [req-calibracao, req-vies-variancia]
+  - id: out-018-3
+    descricao: "Aplicar temperature scaling para recalibrar um modelo superconfiante"
+    licao: licao-018-calibracao
+    exigencias: [req-calibracao, req-vies-variancia]
+  - id: out-019-1
+    descricao: "Explicar por que a acurácia engana sob forte desbalanceamento de classes"
+    licao: licao-019-desbalanceamento-de-classes
+    exigencias: [req-vies-variancia]
+  - id: out-019-2
+    descricao: "Calcular precision, recall e F1 a partir da matriz de confusão"
+    licao: licao-019-desbalanceamento-de-classes
+    exigencias: [req-vies-variancia]
+  - id: out-019-3
+    descricao: "Ajustar o limiar de decisão para equilibrar precision e recall em dados desbalanceados"
+    licao: licao-019-desbalanceamento-de-classes
+    exigencias: [req-vies-variancia]
+  - id: out-020-1
+    descricao: "Definir data leakage e reconhecer target leakage, vazamento de pré-processamento e vazamento temporal"
+    licao: licao-020-data-leakage
+    exigencias: [req-data-leakage, req-vies-variancia]
+  - id: out-020-2
+    descricao: "Demonstrar em Python como o leakage infla artificialmente as métricas"
+    licao: licao-020-data-leakage
+    exigencias: [req-data-leakage, req-vies-variancia]
+  - id: out-020-3
+    descricao: "Aplicar separação treino/teste correta e splits temporais para evitar vazamento"
+    licao: licao-020-data-leakage
+    exigencias: [req-data-leakage, req-vies-variancia]
+  - id: out-021-1
+    descricao: "Desenhar um experimento A/B com grupos de controle e tratamento randomizados"
+    licao: licao-021-experimentacao-testes-ab
+    exigencias: [req-vies-variancia]
+  - id: out-021-2
+    descricao: "Aplicar um teste de hipótese para duas proporções e interpretar o p-valor"
+    licao: licao-021-experimentacao-testes-ab
+    exigencias: [req-vies-variancia]
+  - id: out-021-3
+    descricao: "Reconhecer armadilhas como peeking e o efeito do tamanho de amostra na significância"
+    licao: licao-021-experimentacao-testes-ab
+    exigencias: [req-vies-variancia]
+  - id: out-022-1
+    descricao: "Descrever o neurônio artificial como soma ponderada, viés e função de ativação"
+    licao: licao-022-perceptron
+    exigencias: [req-vies-variancia]
+  - id: out-022-2
+    descricao: "Implementar a regra de aprendizado do perceptron em Python e observar a convergência"
+    licao: licao-022-perceptron
+    exigencias: [req-vies-variancia]
+  - id: out-022-3
+    descricao: "Explicar por que um perceptron só separa classes linearmente separáveis (limite do XOR)"
+    licao: licao-022-perceptron
+    exigencias: [req-vies-variancia]
+  - id: out-023-1
+    descricao: "Explicar por que redes precisam de funções de ativação não lineares"
+    licao: licao-023-funcoes-de-ativacao
+    exigencias: [req-vies-variancia]
+  - id: out-023-2
+    descricao: "Implementar sigmoid, tanh, ReLU e GELU em Python com suas derivadas"
+    licao: licao-023-funcoes-de-ativacao
+    exigencias: [req-vies-variancia]
+  - id: out-023-3
+    descricao: "Comparar saturação, esparsidade e o problema do neurônio morto entre ativações"
+    licao: licao-023-funcoes-de-ativacao
+    exigencias: [req-vies-variancia]
+  - id: out-024-1
+    descricao: "Descrever um MLP como camadas densas alternadas com ativações não lineares"
+    licao: licao-024-mlp
+    exigencias: [req-vies-variancia]
+  - id: out-024-2
+    descricao: "Implementar o forward pass de um MLP com multiplicação matriz-vetor em Python"
+    licao: licao-024-mlp
+    exigencias: [req-vies-variancia]
+  - id: out-024-3
+    descricao: "Mostrar que uma camada oculta resolve o XOR e treinar um MLP do zero com backprop"
+    licao: licao-024-mlp
+    exigencias: [req-vies-variancia]
+  - id: out-025-1
+    descricao: "Explicar por que inicializar pesos com zeros impede o aprendizado (simetria)"
+    licao: licao-025-treino-redes-profundas-inicializacao
+    exigencias: [req-vies-variancia]
+  - id: out-025-2
+    descricao: "Derivar o escalonamento de variância das inicializações de Xavier e He"
+    licao: licao-025-treino-redes-profundas-inicializacao
+    exigencias: [req-vies-variancia]
+  - id: out-025-3
+    descricao: "Demonstrar em Python que a inicialização correta mantém a variância das ativações estável"
+    licao: licao-025-treino-redes-profundas-inicializacao
+    exigencias: [req-vies-variancia]
+  - id: out-026-1
+    descricao: "Explicar por que normalizar ativações estabiliza e acelera o treino"
+    licao: licao-026-batch-layer-norm
+    exigencias: [req-vies-variancia]
+  - id: out-026-2
+    descricao: "Implementar batch normalization com parâmetros γ e β em Python"
+    licao: licao-026-batch-layer-norm
+    exigencias: [req-vies-variancia]
+  - id: out-026-3
+    descricao: "Contrastar batch norm e layer norm quanto ao eixo de normalização"
+    licao: licao-026-batch-layer-norm
+    exigencias: [req-vies-variancia]
+  - id: out-027-1
+    descricao: "Explicar por que gradientes desaparecem ou explodem em redes profundas"
+    licao: licao-027-vanishing-exploding-gradients
+    exigencias: [req-vies-variancia, req-gradient-explosion]
+  - id: out-027-2
+    descricao: "Quantificar em Python o encolhimento do gradiente com ativações saturantes"
+    licao: licao-027-vanishing-exploding-gradients
+    exigencias: [req-vies-variancia, req-gradient-explosion]
+  - id: out-027-3
+    descricao: "Aplicar gradient clipping por norma como mitigação do exploding gradient"
+    licao: licao-027-vanishing-exploding-gradients
+    exigencias: [req-vies-variancia, req-gradient-explosion]
+  - id: out-028-1
+    descricao: "Explicar como o momentum acumula velocidade para acelerar a convergência"
+    licao: licao-028-otimizadores
+    exigencias: [req-vies-variancia]
+  - id: out-028-2
+    descricao: "Descrever a taxa de aprendizado adaptativa por parâmetro do RMSProp"
+    licao: licao-028-otimizadores
+    exigencias: [req-vies-variancia]
+  - id: out-028-3
+    descricao: "Implementar o passo do Adam com correção de bias em Python"
+    licao: licao-028-otimizadores
+    exigencias: [req-vies-variancia]
+  - id: out-029-1
+    descricao: "Explicar a convolução 2D como detector de padrões com pesos compartilhados"
+    licao: licao-029-cnn
+    exigencias: [req-vies-variancia]
+  - id: out-029-2
+    descricao: "Implementar convolução e pooling do zero em Python"
+    licao: licao-029-cnn
+    exigencias: [req-vies-variancia]
+  - id: out-029-3
+    descricao: "Calcular o tamanho do mapa de saída e comparar o custo de parâmetros com camadas densas"
+    licao: licao-029-cnn
+    exigencias: [req-vies-variancia]
+  - id: out-030-1
+    descricao: "Descrever a recorrência de uma RNN e seu estado oculto como memória"
+    licao: licao-030-rnn-lstm-gru
+    exigencias: [req-vies-variancia]
+  - id: out-030-2
+    descricao: "Explicar por que RNNs simples sofrem vanishing gradient ao longo do tempo"
+    licao: licao-030-rnn-lstm-gru
+    exigencias: [req-vies-variancia]
+  - id: out-030-3
+    descricao: "Implementar o gating de LSTM/GRU em Python e mostrar como preserva memória"
+    licao: licao-030-rnn-lstm-gru
+    exigencias: [req-vies-variancia]
+  - id: out-031-1
+    descricao: "Explicar como conexões residuais viabilizam o treino de redes muito profundas"
+    licao: licao-031-arquiteturas-profundas-transfer-learning
+    exigencias: [req-vies-variancia]
+  - id: out-031-2
+    descricao: "Descrever transfer learning: feature extraction e fine-tuning"
+    licao: licao-031-arquiteturas-profundas-transfer-learning
+    exigencias: [req-vies-variancia]
+  - id: out-031-3
+    descricao: "Quantificar em Python a economia de parâmetros treináveis e o ganho de features pré-treinadas"
+    licao: licao-031-arquiteturas-profundas-transfer-learning
+    exigencias: [req-vies-variancia]
+  - id: out-032-1
+    descricao: "Explicar por que texto precisa virar vetores numéricos antes de alimentar um modelo de ML"
+    licao: licao-032-nlp-fundamentos
+    exigencias: [req-llm-apps]
+  - id: out-032-2
+    descricao: "Implementar bag-of-words, TF-IDF e n-grams do zero em Python"
+    licao: licao-032-nlp-fundamentos
+    exigencias: [req-llm-apps]
+  - id: out-032-3
+    descricao: "Contrastar representações esparsas (BoW/TF-IDF) e densas (embeddings) quanto a dimensionalidade e semântica"
+    licao: licao-032-nlp-fundamentos
+    exigencias: [req-llm-apps]
+  - id: out-033-1
+    descricao: "Explicar o papel da tokenização em subpalavras e por que ela equilibra tamanho de vocabulário e cobertura"
+    licao: licao-033-tokenizacao
+    exigencias: [req-llm-apps]
+  - id: out-033-2
+    descricao: "Implementar o treino de merges do BPE e a segmentação greedy do WordPiece em Python"
+    licao: licao-033-tokenizacao
+    exigencias: [req-llm-apps]
+  - id: out-033-3
+    descricao: "Construir um tokenizador reversível (estilo SentencePiece) e provar a igualdade exata na ida-e-volta texto → ids → texto"
+    licao: licao-033-tokenizacao
+    exigencias: [req-llm-apps]
+  - id: out-034-1
+    descricao: "Explicar a hipótese distribucional e por que embeddings densos capturam semântica que o bag-of-words não captura"
+    licao: licao-034-embeddings
+    exigencias: [req-rag]
+  - id: out-034-2
+    descricao: "Implementar busca por vizinho mais próximo e analogias vetoriais sobre uma tabela de embeddings em Python"
+    licao: licao-034-embeddings
+    exigencias: [req-rag]
+  - id: out-034-3
+    descricao: "Distinguir embeddings estáticos (word2vec/GloVe) de embeddings contextuais e demonstrar a dependência do contexto"
+    licao: licao-034-embeddings
+    exigencias: [req-rag]
+  - id: out-035-1
+    descricao: "Calcular produto interno, distância euclidiana e similaridade do cosseno entre embeddings em Python"
+    licao: licao-035-metricas-distancia-similaridade
+    exigencias: [req-rag]
+  - id: out-035-2
+    descricao: "Explicar quando os rankings por cosseno e por L2 discordam e o papel da magnitude"
+    licao: licao-035-metricas-distancia-similaridade
+    exigencias: [req-rag]
+  - id: out-035-3
+    descricao: "Justificar por que normalizar embeddings torna o produto interno equivalente ao cosseno na busca vetorial"
+    licao: licao-035-metricas-distancia-similaridade
+    exigencias: [req-rag]
+  - id: out-036-1
+    descricao: "Implementar busca vetorial exata por varredura linear e recuperar os k vizinhos mais próximos em Python"
+    licao: licao-036-busca-vetorial-knn-exato
+    exigencias: [req-rag]
+  - id: out-036-2
+    descricao: "Explicar o papel da métrica de distância na ordenação dos resultados de k-NN"
+    licao: licao-036-busca-vetorial-knn-exato
+    exigencias: [req-rag]
+  - id: out-036-3
+    descricao: "Analisar o custo O(n·d) da busca exata e justificar por que ele motiva a busca aproximada"
+    licao: licao-036-busca-vetorial-knn-exato
+    exigencias: [req-rag]
+  - id: out-037-1
+    descricao: "Definir busca aproximada de vizinhos (ANN) e medir sua qualidade pelo recall@k contra o k-NN exato"
+    licao: licao-037-busca-aproximada-ann
+    exigencias: [req-rag]
+  - id: out-037-2
+    descricao: "Implementar um índice IVF didático que examina apenas clusters próximos da consulta"
+    licao: licao-037-busca-aproximada-ann
+    exigencias: [req-rag]
+  - id: out-037-3
+    descricao: "Analisar o trade-off recall × latência variando o esforço de busca (nprobe)"
+    licao: licao-037-busca-aproximada-ann
+    exigencias: [req-rag]
+  - id: out-038-1
+    descricao: "Implementar busca greedy em um grafo de vizinhança navegável e explicar quando ela fica presa em ótimos locais"
+    licao: licao-038-hnsw
+    exigencias: [req-rag]
+  - id: out-038-2
+    descricao: "Explicar como as camadas hierárquicas do HNSW reduzem o número de saltos até o vizinho"
+    licao: licao-038-hnsw
+    exigencias: [req-rag]
+  - id: out-038-3
+    descricao: "Analisar o efeito do parâmetro ef sobre recall e custo na busca em grafo do HNSW"
+    licao: licao-038-hnsw
+    exigencias: [req-rag]
+  - id: out-039-1
+    descricao: "Explicar por que o estado oculto de tamanho fixo de uma RNN é um gargalo para sequências longas"
+    licao: licao-039-motivacao-atencao
+    exigencias: [req-llm-apps]
+  - id: out-039-2
+    descricao: "Quantificar o decaimento da influência de entradas distantes e relacioná-lo ao comprimento do caminho de informação"
+    licao: licao-039-motivacao-atencao
+    exigencias: [req-llm-apps]
+  - id: out-039-3
+    descricao: "Contrastar o custo sequencial da RNN com o acesso direto e paralelizável da atenção"
+    licao: licao-039-motivacao-atencao
+    exigencias: [req-llm-apps]
+  - id: out-040-1
+    descricao: "Projetar embeddings em Query, Key e Value e explicar o papel de cada um"
+    licao: licao-040-self-attention-qkv
+    exigencias: [req-llm-apps]
+  - id: out-040-2
+    descricao: "Implementar scaled dot-product attention do zero em numpy, incluindo a softmax estável"
+    licao: licao-040-self-attention-qkv
+    exigencias: [req-llm-apps]
+  - id: out-040-3
+    descricao: "Justificar a divisão por raiz de d_k e interpretar a saída como média ponderada dos Values"
+    licao: licao-040-self-attention-qkv
+    exigencias: [req-llm-apps]
+  - id: out-041-1
+    descricao: "Explicar por que o self-attention é invariante à ordem e precisa de informação posicional"
+    licao: licao-041-positional-encoding
+    exigencias: [req-llm-apps]
+  - id: out-041-2
+    descricao: "Implementar o positional encoding sinusoidal em numpy e somá-lo aos embeddings"
+    licao: licao-041-positional-encoding
+    exigencias: [req-llm-apps]
+  - id: out-041-3
+    descricao: "Justificar a propriedade de deslocamento relativo das funções seno/cosseno"
+    licao: licao-041-positional-encoding
+    exigencias: [req-llm-apps]
+  - id: out-042-1
+    descricao: "Dividir as projeções em h cabeças de dimensão d_k = d_model / h e remontá-las"
+    licao: licao-042-multi-head-attention
+    exigencias: [req-llm-apps]
+  - id: out-042-2
+    descricao: "Implementar multi-head attention do zero em numpy, com atenção paralela por cabeça"
+    licao: licao-042-multi-head-attention
+    exigencias: [req-llm-apps]
+  - id: out-042-3
+    descricao: "Explicar por que múltiplas cabeças capturam relações complementares na mesma sequência"
+    licao: licao-042-multi-head-attention
+    exigencias: [req-llm-apps]
+  - id: out-043-1
+    descricao: "Descrever o fluxo de um bloco Transformer: atenção, FFN, conexões residuais e normalização"
+    licao: licao-043-arquitetura-transformer
+    exigencias: [req-llm-apps]
+  - id: out-043-2
+    descricao: "Implementar conexão residual + LayerNorm e a feed-forward position-wise em numpy"
+    licao: licao-043-arquitetura-transformer
+    exigencias: [req-llm-apps]
+  - id: out-043-3
+    descricao: "Compor as sub-camadas num bloco de encoder completo que preserva a forma da entrada"
+    licao: licao-043-arquitetura-transformer
+    exigencias: [req-llm-apps]
+  - id: out-044-1
+    descricao: "Explicar o que é um LLM como um modelo de linguagem que estima a probabilidade do próximo token e fatoriza a probabilidade de uma sequência pela regra da cadeia"
+    licao: licao-044-llms-modelagem-linguagem-escala
+    exigencias: [req-llm-apps]
+  - id: out-044-2
+    descricao: "Calcular cross-entropy e perplexidade de um modelo de linguagem sobre uma sequência em Python"
+    licao: licao-044-llms-modelagem-linguagem-escala
+    exigencias: [req-llm-apps]
+  - id: out-044-3
+    descricao: "Interpretar leis de escala (loss como lei de potência em parâmetros/dados/compute) e prever o efeito de aumentar o tamanho do modelo"
+    licao: licao-044-llms-modelagem-linguagem-escala
+    exigencias: [req-llm-apps]
+  - id: out-045-1
+    descricao: "Explicar o objetivo auto-supervisionado de pré-treino (next-token / teacher forcing) e por que não exige rótulos humanos"
+    licao: licao-045-pre-treinamento
+    exigencias: [req-llm-apps]
+  - id: out-045-2
+    descricao: "Calcular a perda média de pré-treino sobre um corpus e estimar passos de treino a partir do volume de tokens em Python"
+    licao: licao-045-pre-treinamento
+    exigencias: [req-llm-apps]
+  - id: out-045-3
+    descricao: "Estimar o custo de compute de um pré-treino pela regra C ≈ 6·N·D e interpretar a alocação compute-ótima (Chinchilla)"
+    licao: licao-045-pre-treinamento
+    exigencias: [req-llm-apps]
+  - id: out-046-1
+    descricao: "Explicar por que um modelo pré-treinado precisa de instruction tuning para seguir instruções e como o formato instrução-resposta estrutura os dados"
+    licao: licao-046-instruction-tuning-sft
+    exigencias: [req-llm-apps]
+  - id: out-046-2
+    descricao: "Implementar a perda mascarada do SFT (cross-entropy apenas sobre os tokens da resposta) em Python"
+    licao: licao-046-instruction-tuning-sft
+    exigencias: [req-llm-apps]
+  - id: out-046-3
+    descricao: "Comparar a perda do SFT com a do pré-treino e explicar o efeito da máscara sobre o gradiente"
+    licao: licao-046-instruction-tuning-sft
+    exigencias: [req-llm-apps]
+  - id: out-047-1
+    descricao: "Explicar as três etapas do RLHF (SFT, reward model, otimização por RL) e por que o sinal de preferência humana substitui um rótulo de resposta ideal"
+    licao: licao-047-rlhf-ppo
+    exigencias: [req-llm-apps]
+  - id: out-047-2
+    descricao: "Implementar a perda de preferência de um reward model (Bradley-Terry) e a recompensa com penalidade KL em Python"
+    licao: licao-047-rlhf-ppo
+    exigencias: [req-llm-apps]
+  - id: out-047-3
+    descricao: "Calcular o objetivo clipado do PPO e explicar como o clipping estabiliza a atualização da política"
+    licao: licao-047-rlhf-ppo
+    exigencias: [req-llm-apps]
+  - id: out-048-1
+    descricao: "Explicar a perda do DPO e como ela otimiza preferências diretamente, sem treinar um reward model nem rodar RL online"
+    licao: licao-048-dpo-vs-ppo
+    exigencias: [req-llm-apps]
+  - id: out-048-2
+    descricao: "Implementar a perda do DPO a partir de log-probabilidades da política e da referência em Python"
+    licao: licao-048-dpo-vs-ppo
+    exigencias: [req-llm-apps]
+  - id: out-048-3
+    descricao: "Comparar DPO e PPO em pipeline, custo, estabilidade e quando preferir cada um (relevante em entrevista)"
+    licao: licao-048-dpo-vs-ppo
+    exigencias: [req-llm-apps]
+  - id: out-049-1
+    descricao: "Explicar como a temperatura reescala os logits e controla o trade-off entre diversidade e determinismo na geração"
+    licao: licao-049-sampling-decodificacao
+    exigencias: [req-llm-apps]
+  - id: out-049-2
+    descricao: "Implementar filtragem top-k e top-p (nucleus) sobre a distribuição do próximo token em Python"
+    licao: licao-049-sampling-decodificacao
+    exigencias: [req-llm-apps]
+  - id: out-049-3
+    descricao: "Amostrar tokens de forma reprodutível de uma distribuição truncada e interpretar o efeito de cada hiperparâmetro"
+    licao: licao-049-sampling-decodificacao
+    exigencias: [req-llm-apps]
+  - id: out-050-1
+    descricao: "Distinguir modelos generativos de discriminativos e descrever o que torna a IA generativa diferente"
+    licao: licao-050-genai-multimodais
+    exigencias: [req-llm-apps]
+  - id: out-050-2
+    descricao: "Explicar como modalidades distintas (texto, imagem, áudio) são convertidas em tokens para um modelo multimodal"
+    licao: licao-050-genai-multimodais
+    exigencias: [req-llm-apps]
+  - id: out-050-3
+    descricao: "Calcular similaridade no espaço de embedding compartilhado para recuperar a melhor correspondência entre modalidades"
+    licao: licao-050-genai-multimodais
+    exigencias: [req-llm-apps]
+  - id: out-051-1
+    descricao: "Montar o corpo de uma requisição de chat no formato de mensagens com papéis usado pelas APIs de LLM"
+    licao: licao-051-apis-provedores-llm
+    exigencias: [req-llm-apps, req-custo-inferencia]
+  - id: out-051-2
+    descricao: "Aplicar autenticação por bearer token mascarando a chave de API em logs e saídas"
+    licao: licao-051-apis-provedores-llm
+    exigencias: [req-llm-apps, req-custo-inferencia]
+  - id: out-051-3
+    descricao: "Estimar tokens de entrada/saída e calcular o custo de uma chamada com preços por 1k tokens"
+    licao: licao-051-apis-provedores-llm
+    exigencias: [req-llm-apps, req-custo-inferencia]
+  - id: out-052-1
+    descricao: "Identificar as partes anatômicas de um prompt e montá-las na ordem de leitura correta"
+    licao: licao-052-prompt-engineering-fundamentos
+    exigencias: [req-prompt, req-llm-apps]
+  - id: out-052-2
+    descricao: "Renderizar prompts reutilizáveis a partir de templates com variáveis nomeadas"
+    licao: licao-052-prompt-engineering-fundamentos
+    exigencias: [req-prompt, req-llm-apps]
+  - id: out-052-3
+    descricao: "Aplicar delimitadores e instruções claras para separar instrução de dados do usuário"
+    licao: licao-052-prompt-engineering-fundamentos
+    exigencias: [req-prompt, req-llm-apps]
+  - id: out-053-1
+    descricao: "Construir prompts few-shot e prever um rótulo por similaridade aos exemplos fornecidos"
+    licao: licao-053-prompt-engineering-avancado
+    exigencias: [req-prompt]
+  - id: out-053-2
+    descricao: "Aplicar chain-of-thought registrando passos intermediários explícitos até a resposta"
+    licao: licao-053-prompt-engineering-avancado
+    exigencias: [req-prompt]
+  - id: out-053-3
+    descricao: "Decompor uma tarefa complexa em subtarefas e combinar seus resultados"
+    licao: licao-053-prompt-engineering-avancado
+    exigencias: [req-prompt]
+  - id: out-054-1
+    descricao: "Instruir o modelo a produzir JSON conforme um schema e parsear a saída estruturada"
+    licao: licao-054-saidas-estruturadas-json-mode
+    exigencias: [req-verificacao-saidas]
+  - id: out-054-2
+    descricao: "Validar objetos parseados contra um schema, detectando chaves ausentes e tipos inválidos"
+    licao: licao-054-saidas-estruturadas-json-mode
+    exigencias: [req-verificacao-saidas]
+  - id: out-054-3
+    descricao: "Garantir o round-trip dict → JSON → dict com igualdade exata"
+    licao: licao-054-saidas-estruturadas-json-mode
+    exigencias: [req-verificacao-saidas]
+  - id: out-055-1
+    descricao: "Explicar a limitação do conhecimento paramétrico de um LLM e por que a recuperação não-paramétrica a complementa"
+    licao: licao-055-rag-fundamentos
+    exigencias: [req-rag, req-llm-apps]
+  - id: out-055-2
+    descricao: "Implementar o fluxo retrieve-augment-generate mínimo em Python puro"
+    licao: licao-055-rag-fundamentos
+    exigencias: [req-rag, req-llm-apps]
+  - id: out-055-3
+    descricao: "Anexar atribuição de fontes a uma resposta gerada a partir de documentos recuperados"
+    licao: licao-055-rag-fundamentos
+    exigencias: [req-rag, req-llm-apps]
+  - id: out-056-1
+    descricao: "Particionar um documento em chunks de tamanho fixo e em janelas deslizantes com sobreposição"
+    licao: licao-056-chunking-indexacao
+    exigencias: [req-rag]
+  - id: out-056-2
+    descricao: "Explicar o trade-off entre granularidade do chunk e preservação de contexto na borda"
+    licao: licao-056-chunking-indexacao
+    exigencias: [req-rag]
+  - id: out-056-3
+    descricao: "Construir um índice invertido (termo → chunks) e resolver buscas por interseção de postings"
+    licao: licao-056-chunking-indexacao
+    exigencias: [req-rag]
+  - id: out-057-1
+    descricao: "Representar consulta e documentos como vetores e medir relevância pela similaridade do cosseno"
+    licao: licao-057-pipeline-rag-basico
+    exigencias: [req-rag, req-llm-apps]
+  - id: out-057-2
+    descricao: "Recuperar os top-k documentos por cosseno com desempate determinístico"
+    licao: licao-057-pipeline-rag-basico
+    exigencias: [req-rag, req-llm-apps]
+  - id: out-057-3
+    descricao: "Montar o prompt aumentado e gerar a resposta, integrando as três etapas num pipeline executável"
+    licao: licao-057-pipeline-rag-basico
+    exigencias: [req-rag, req-llm-apps]
+  - id: out-058-1
+    descricao: "Implementar um índice flat de busca exata e contar suas comparações"
+    licao: licao-058-vector-databases
+    exigencias: [req-rag]
+  - id: out-058-2
+    descricao: "Construir um índice particionado tipo IVF e explicar o trade-off entre comparações e recall"
+    licao: licao-058-vector-databases
+    exigencias: [req-rag]
+  - id: out-058-3
+    descricao: "Combinar filtragem por metadados com busca vetorial, no modelo do pgvector"
+    licao: licao-058-vector-databases
+    exigencias: [req-rag]
+  - id: out-059-1
+    descricao: "Implementar o score BM25 e explicar o papel de IDF, saturação (k1) e normalização por comprimento (b)"
+    licao: licao-059-rag-hibrido
+    exigencias: [req-rag]
+  - id: out-059-2
+    descricao: "Demonstrar a complementaridade entre recuperação densa (semântica) e esparsa (lexical)"
+    licao: licao-059-rag-hibrido
+    exigencias: [req-rag]
+  - id: out-059-3
+    descricao: "Fundir rankings densos e esparsos com Reciprocal Rank Fusion (RRF)"
+    licao: licao-059-rag-hibrido
+    exigencias: [req-rag]
+  - id: out-060-1
+    descricao: "Consultar múltiplos índices especializados e unir os candidatos num pool único"
+    licao: licao-060-rag-multi-index-reranking
+    exigencias: [req-rag]
+  - id: out-060-2
+    descricao: "Estruturar recuperação em duas etapas (recall amplo seguido de precisão) e justificar o custo"
+    licao: licao-060-rag-multi-index-reranking
+    exigencias: [req-rag]
+  - id: out-060-3
+    descricao: "Implementar um re-ranker que reordena candidatos olhando o par consulta-documento em conjunto"
+    licao: licao-060-rag-multi-index-reranking
+    exigencias: [req-rag]
+  - id: out-061-1
+    descricao: "Implementar a decisão de recuperar (quando buscar vs responder direto)"
+    licao: licao-061-agentic-rag
+    exigencias: [req-rag, req-agentes]
+  - id: out-061-2
+    descricao: "Reformular a consulta e iterar a recuperação quando o resultado é insuficiente"
+    licao: licao-061-agentic-rag
+    exigencias: [req-rag, req-agentes]
+  - id: out-061-3
+    descricao: "Avaliar a suficiência do contexto e parar o laço com um limite de iterações"
+    licao: licao-061-agentic-rag
+    exigencias: [req-rag, req-agentes]
+  - id: out-062-1
+    descricao: "Descrever o laço de controle de um agente (percepção, raciocínio, ação, feedback)"
+    licao: licao-062-arquitetura-de-agentes
+    exigencias: [req-agentes, req-llm-apps]
+  - id: out-062-2
+    descricao: "Implementar em Python um laço de agente determinístico com planner, executor, memória e toolbox"
+    licao: licao-062-arquitetura-de-agentes
+    exigencias: [req-agentes, req-llm-apps]
+  - id: out-062-3
+    descricao: "Garantir a terminação do laço com uma condição de parada e um limite de iterações"
+    licao: licao-062-arquitetura-de-agentes
+    exigencias: [req-agentes, req-llm-apps]
+  - id: out-063-1
+    descricao: "Explicar o padrão ReAct e o ciclo Thought → Action → Observation"
+    licao: licao-063-react
+    exigencias: [req-agentes]
+  - id: out-063-2
+    descricao: "Parsear a ação emitida por um agente no formato ferramenta[args]"
+    licao: licao-063-react
+    exigencias: [req-agentes]
+  - id: out-063-3
+    descricao: "Implementar um laço ReAct determinístico que termina em uma resposta final"
+    licao: licao-063-react
+    exigencias: [req-agentes]
+  - id: out-064-1
+    descricao: "Distinguir Plan-Execute de ReAct e justificar quando planejar antecipadamente"
+    licao: licao-064-plan-execute
+    exigencias: [req-agentes]
+  - id: out-064-2
+    descricao: "Implementar um planner que gera um plano ordenado e um executor sequencial"
+    licao: licao-064-plan-execute
+    exigencias: [req-agentes]
+  - id: out-064-3
+    descricao: "Implementar replanejamento determinístico quando um passo falha"
+    licao: licao-064-plan-execute
+    exigencias: [req-agentes]
+  - id: out-065-1
+    descricao: "Explicar o padrão Reflection e o papel do crítico na auto-revisão"
+    licao: licao-065-reflection
+    exigencias: [req-agentes]
+  - id: out-065-2
+    descricao: "Implementar um ciclo gerar → criticar → revisar determinístico"
+    licao: licao-065-reflection
+    exigencias: [req-agentes]
+  - id: out-065-3
+    descricao: "Definir um critério de aceitação por qualidade e por limite de iterações"
+    licao: licao-065-reflection
+    exigencias: [req-agentes]
+  - id: out-066-1
+    descricao: "Descrever um esquema de ferramenta (nome, descrição, parâmetros) e serializá-lo"
+    licao: licao-066-function-calling-tool-use
+    exigencias: [req-agentes, req-verificacao-saidas]
+  - id: out-066-2
+    descricao: "Despachar uma tool-call para a função registrada correspondente"
+    licao: licao-066-function-calling-tool-use
+    exigencias: [req-agentes, req-verificacao-saidas]
+  - id: out-066-3
+    descricao: "Garantir o round-trip tool-call → JSON → tool-call com igualdade exata"
+    licao: licao-066-function-calling-tool-use
+    exigencias: [req-agentes, req-verificacao-saidas]
+  - id: out-067-1
+    descricao: "Distinguir memória de curto prazo, de longo prazo e episódica em agentes"
+    licao: licao-067-memoria-de-agentes
+    exigencias: [req-agentes, req-rag]
+  - id: out-067-2
+    descricao: "Implementar um buffer de curto prazo de tamanho fixo e uma memória episódica com embeddings"
+    licao: licao-067-memoria-de-agentes
+    exigencias: [req-agentes, req-rag]
+  - id: out-067-3
+    descricao: "Recuperar episódios relevantes por similaridade do cosseno (top-k)"
+    licao: licao-067-memoria-de-agentes
+    exigencias: [req-agentes, req-rag]
+  - id: out-068-1
+    descricao: "Estimar o consumo de tokens de um histórico e compará-lo ao orçamento da janela"
+    licao: licao-068-gerenciamento-de-contexto
+    exigencias: [req-agentes]
+  - id: out-068-2
+    descricao: "Aplicar truncamento por recência preservando a mensagem de sistema"
+    licao: licao-068-gerenciamento-de-contexto
+    exigencias: [req-agentes]
+  - id: out-068-3
+    descricao: "Reduzir tokens por sumarização do histórico antigo"
+    licao: licao-068-gerenciamento-de-contexto
+    exigencias: [req-agentes]
+  - id: out-069-1
+    descricao: "Modelar um agente como um grafo de estado com nós e arestas"
+    licao: licao-069-orquestracao-langgraph
+    exigencias: [req-agentes]
+  - id: out-069-2
+    descricao: "Implementar um motor que percorre o grafo a partir de um estado compartilhado"
+    licao: licao-069-orquestracao-langgraph
+    exigencias: [req-agentes]
+  - id: out-069-3
+    descricao: "Usar arestas condicionais para criar laços e ramificações de controle"
+    licao: licao-069-orquestracao-langgraph
+    exigencias: [req-agentes]
+  - id: out-070-1
+    descricao: "Instrumentar um agente com um traço de execução para observabilidade"
+    licao: licao-070-observabilidade-limites
+    exigencias: [req-agentes, req-deploy-prod]
+  - id: out-070-2
+    descricao: "Aplicar guardrails e human-in-the-loop para conter ações perigosas"
+    licao: licao-070-observabilidade-limites
+    exigencias: [req-agentes, req-deploy-prod]
+  - id: out-070-3
+    descricao: "Prevenir laços descontrolados por limite de passos e detecção de repetição"
+    licao: licao-070-observabilidade-limites
+    exigencias: [req-agentes, req-deploy-prod]
+  - id: out-071-1
+    descricao: "Distinguir os padrões de orquestração multi-agente (Supervisor, Hierárquico, Group-chat, Delegação)"
+    licao: licao-071-multi-agente
+    exigencias: [req-agentes]
+  - id: out-071-2
+    descricao: "Implementar um supervisor que delega tarefas a agentes especializados"
+    licao: licao-071-multi-agente
+    exigencias: [req-agentes]
+  - id: out-071-3
+    descricao: "Agregar e reconciliar resultados de múltiplos agentes de forma determinística"
+    licao: licao-071-multi-agente
+    exigencias: [req-agentes]
+  - id: out-072-1
+    descricao: "Explicar o problema de integração M×N que o MCP resolve"
+    licao: licao-072-mcp-fundamentos
+    exigencias: [req-agentes]
+  - id: out-072-2
+    descricao: "Descrever os papéis de host, client e server na arquitetura do MCP"
+    licao: licao-072-mcp-fundamentos
+    exigencias: [req-agentes]
+  - id: out-072-3
+    descricao: "Modelar a negociação de capacidades (handshake) entre cliente e servidor"
+    licao: licao-072-mcp-fundamentos
+    exigencias: [req-agentes]
+  - id: out-073-1
+    descricao: "Distinguir as três primitivas do MCP e quem controla cada uma"
+    licao: licao-073-mcp-primitivas
+    exigencias: [req-agentes]
+  - id: out-073-2
+    descricao: "Listar e ler resources identificados por URI"
+    licao: licao-073-mcp-primitivas
+    exigencias: [req-agentes]
+  - id: out-073-3
+    descricao: "Descrever e invocar tools e renderizar prompts a partir de templates"
+    licao: licao-073-mcp-primitivas
+    exigencias: [req-agentes]
+  - id: out-074-1
+    descricao: "Montar e serializar uma request JSON-RPC 2.0 de forma canônica"
+    licao: licao-074-mcp-jsonrpc
+    exigencias: [req-agentes, req-verificacao-saidas]
+  - id: out-074-2
+    descricao: "Distinguir response de sucesso, response de erro e notification"
+    licao: licao-074-mcp-jsonrpc
+    exigencias: [req-agentes, req-verificacao-saidas]
+  - id: out-074-3
+    descricao: "Garantir o round-trip request → JSON → request com igualdade exata"
+    licao: licao-074-mcp-jsonrpc
+    exigencias: [req-agentes, req-verificacao-saidas]
+  - id: out-075-1
+    descricao: "Implementar um servidor MCP que registra handlers e despacha por método"
+    licao: licao-075-mcp-servidores-clientes-python
+    exigencias: [req-agentes]
+  - id: out-075-2
+    descricao: "Implementar um cliente MCP que numera requests e casa respostas pelo id"
+    licao: licao-075-mcp-servidores-clientes-python
+    exigencias: [req-agentes]
+  - id: out-075-3
+    descricao: "Executar o ciclo completo tools/list seguido de tools/call"
+    licao: licao-075-mcp-servidores-clientes-python
+    exigencias: [req-agentes]
+  - id: out-076-1
+    descricao: "Aplicar uma pipeline de limpeza (normalização, remoção de vazios e deduplicação) sobre um dataset cru em Python"
+    licao: licao-076-preparacao-datasets-fine-tuning
+    exigencias: [req-llm-apps]
+  - id: out-076-2
+    descricao: "Balancear classes de um dataset por subamostragem de forma reprodutível"
+    licao: licao-076-preparacao-datasets-fine-tuning
+    exigencias: [req-llm-apps]
+  - id: out-076-3
+    descricao: "Serializar e parsear exemplos no formato JSONL de chat com round-trip exato"
+    licao: licao-076-preparacao-datasets-fine-tuning
+    exigencias: [req-llm-apps]
+  - id: out-077-1
+    descricao: "Decidir entre RAG, fine-tuning, ambos ou prompt engineering a partir das características do problema"
+    licao: licao-077-fine-tuning-completo
+    exigencias: [req-llm-apps]
+  - id: out-077-2
+    descricao: "Estimar a memória de treino do fine-tuning completo (pesos, gradientes e estados do otimizador)"
+    licao: licao-077-fine-tuning-completo
+    exigencias: [req-llm-apps]
+  - id: out-077-3
+    descricao: "Aplicar uma matriz de decisão ponderada para comparar RAG e fine-tuning"
+    licao: licao-077-fine-tuning-completo
+    exigencias: [req-llm-apps]
+  - id: out-078-1
+    descricao: "Construir a atualização de baixo posto ΔW = B·A e verificar seu posto em Python"
+    licao: licao-078-lora-peft
+    exigencias: [req-llm-apps]
+  - id: out-078-2
+    descricao: "Comparar o número de parâmetros treináveis do LoRA, r·(d+k), com o da matriz cheia, d·k"
+    licao: licao-078-lora-peft
+    exigencias: [req-llm-apps]
+  - id: out-078-3
+    descricao: "Aplicar o fator de escala alpha/r e medir seu efeito na saída da camada adaptada"
+    licao: licao-078-lora-peft
+    exigencias: [req-llm-apps]
+  - id: out-079-1
+    descricao: "Fazer upload e validar um arquivo JSONL de treino usando um cliente simulado"
+    licao: licao-079-fine-tuning-openai-api
+    exigencias: [req-llm-apps]
+  - id: out-079-2
+    descricao: "Criar um job de fine-tuning com hiperparâmetros e estimar o número de passos de treino"
+    licao: licao-079-fine-tuning-openai-api
+    exigencias: [req-llm-apps]
+  - id: out-079-3
+    descricao: "Monitorar a progressão do treino e usar o nome do modelo ajustado resultante"
+    licao: licao-079-fine-tuning-openai-api
+    exigencias: [req-llm-apps]
+  - id: out-080-1
+    descricao: "Calcular métricas de avaliação (acurácia e taxa de formato válido) sobre um conjunto de teste"
+    licao: licao-080-avaliacao-modelo-ajustado
+    exigencias: [req-evals]
+  - id: out-080-2
+    descricao: "Conduzir um teste A/B entre o modelo base e o ajustado e quantificar o lift"
+    licao: licao-080-avaliacao-modelo-ajustado
+    exigencias: [req-evals]
+  - id: out-080-3
+    descricao: "Detectar overfitting comparando as curvas de perda de treino e validação e indicar early stopping"
+    licao: licao-080-avaliacao-modelo-ajustado
+    exigencias: [req-evals]
+  - id: out-081-1
+    descricao: "Decidir, num design AI-first, quando usar IA e quando usar regras determinísticas"
+    licao: licao-081-design-ai-first
+    exigencias: [req-llm-apps, req-deploy-prod]
+  - id: out-081-2
+    descricao: "Quantificar o trade-off entre precisão, latência e custo ao escolher uma solução"
+    licao: licao-081-design-ai-first
+    exigencias: [req-llm-apps, req-deploy-prod]
+  - id: out-081-3
+    descricao: "Projetar degradação graciosa com limiar de confiança e fallback determinístico"
+    licao: licao-081-design-ai-first
+    exigencias: [req-llm-apps, req-deploy-prod]
+  - id: out-082-1
+    descricao: "Quantificar o custo de coordenação adicional de uma arquitetura multi-agente"
+    licao: licao-082-single-vs-multi-agente
+    exigencias: [req-agentes]
+  - id: out-082-2
+    descricao: "Comparar a latência sequencial (single) com a latência paralela (multi)"
+    licao: licao-082-single-vs-multi-agente
+    exigencias: [req-agentes]
+  - id: out-082-3
+    descricao: "Decidir entre single-agent e multi-agente a partir de especialização, latência e orçamento"
+    licao: licao-082-single-vs-multi-agente
+    exigencias: [req-agentes]
+  - id: out-083-1
+    descricao: "Implementar um model router que despacha requisições ao tier adequado"
+    licao: licao-083-padroes-design-ia
+    exigencias: [req-llm-apps, req-custo-inferencia]
+  - id: out-083-2
+    descricao: "Implementar um semantic cache que responde por similaridade de cosseno acima de um limiar"
+    licao: licao-083-padroes-design-ia
+    exigencias: [req-llm-apps, req-custo-inferencia]
+  - id: out-083-3
+    descricao: "Aplicar human-in-the-loop e approval gates combinando confiança e risco"
+    licao: licao-083-padroes-design-ia
+    exigencias: [req-llm-apps, req-custo-inferencia]
+  - id: out-084-1
+    descricao: "Modelar o fluxo de uma requisição pelas camadas gateway → orquestração → serviços"
+    licao: licao-084-arquitetura-enterprise
+    exigencias: [req-deploy-prod, req-custo-inferencia]
+  - id: out-084-2
+    descricao: "Implementar model tiering que escolhe o tier mais forte dentro do SLA de latência"
+    licao: licao-084-arquitetura-enterprise
+    exigencias: [req-deploy-prod, req-custo-inferencia]
+  - id: out-084-3
+    descricao: "Agregar métricas de observabilidade (p50, p95 e taxa de erro) de uma janela de requisições"
+    licao: licao-084-arquitetura-enterprise
+    exigencias: [req-deploy-prod, req-custo-inferencia]
+  - id: out-085-1
+    descricao: "Descrever a anatomia de um eval (dataset, sistema sob teste, scorer e agregação) e implementá-la em Python"
+    licao: licao-085-evals-metodologia
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-085-2
+    descricao: "Agregar resultados por accuracy e por taxa de aprovação em relação a um limiar"
+    licao: licao-085-evals-metodologia
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-085-3
+    descricao: "Comparar duas versões de um sistema de forma pareada e decidir, de modo binário, se houve regressão"
+    licao: licao-085-evals-metodologia
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-086-1
+    descricao: "Calcular precisão, revocação e F1 a partir de TP/FP/FN para tarefas de recuperação/classificação"
+    licao: licao-086-metricas-datasets-avaliacao
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-086-2
+    descricao: "Implementar um LLM-as-judge determinístico por rubrica e agregar suas notas"
+    licao: licao-086-metricas-datasets-avaliacao
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-086-3
+    descricao: "Distinguir métricas offline (dataset rotulado) de métricas online (sinal de usuário) e medir a lacuna entre elas"
+    licao: licao-086-metricas-datasets-avaliacao
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-087-1
+    descricao: "Modelar o custo de uma requisição LLM a partir de tokens de entrada/saída e projetar custo diário e mensal"
+    licao: licao-087-custo-inferencia
+    exigencias: [req-custo-inferencia, req-deploy-prod]
+  - id: out-087-2
+    descricao: "Quantificar a economia de um cache em função da taxa de acerto (hit rate)"
+    licao: licao-087-custo-inferencia
+    exigencias: [req-custo-inferencia, req-deploy-prod]
+  - id: out-087-3
+    descricao: "Explicar como o batching amortiza o overhead fixo e calcular o custo por requisição por tamanho de lote"
+    licao: licao-087-custo-inferencia
+    exigencias: [req-custo-inferencia, req-deploy-prod]
+  - id: out-088-1
+    descricao: "Decompor a latência total em TTFT mais geração e quantificar o ganho percebido do streaming"
+    licao: licao-088-latencia-inferencia
+    exigencias: [req-custo-inferencia, req-deploy-prod]
+  - id: out-088-2
+    descricao: "Calcular percentis p50/p95/p99 de latência pelo método nearest-rank e explicar por que a média engana"
+    licao: licao-088-latencia-inferencia
+    exigencias: [req-custo-inferencia, req-deploy-prod]
+  - id: out-088-3
+    descricao: "Aplicar a Lei de Little para dimensionar a concorrência necessária a um alvo de vazão"
+    licao: licao-088-latencia-inferencia
+    exigencias: [req-custo-inferencia, req-deploy-prod]
+  - id: out-089-1
+    descricao: "Agregar um trace de prompt em latência e custo totais e identificar o span gargalo"
+    licao: licao-089-mlops-llmops-observabilidade
+    exigencias: [req-deploy-prod, req-evals]
+  - id: out-089-2
+    descricao: "Calcular métricas operacionais (taxa de erro e p95) sobre uma janela e verificar SLOs de forma binária"
+    licao: licao-089-mlops-llmops-observabilidade
+    exigencias: [req-deploy-prod, req-evals]
+  - id: out-089-3
+    descricao: "Decidir promover ou reverter um rollout canary comparando-o ao baseline com margens"
+    licao: licao-089-mlops-llmops-observabilidade
+    exigencias: [req-deploy-prod, req-evals]
+  - id: out-090-1
+    descricao: "Calcular a atribuição de features de uma predição em um modelo linear ($w_i x_i$) e ordená-la por importância"
+    licao: licao-090-interpretabilidade-explicabilidade
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-090-2
+    descricao: "Estimar a importância de cada feature por permutação, medindo o aumento do erro"
+    licao: licao-090-interpretabilidade-explicabilidade
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-090-3
+    descricao: "Distinguir explicação local (uma instância) de explicação global (média sobre o conjunto)"
+    licao: licao-090-interpretabilidade-explicabilidade
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-091-1
+    descricao: "Medir a paridade demográfica como diferença entre taxas de seleção por grupo"
+    licao: licao-091-vieses-fairness
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-091-2
+    descricao: "Calcular TPR e FPR por grupo para avaliar equalized odds"
+    licao: licao-091-vieses-fairness
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-091-3
+    descricao: "Aplicar a regra dos 80% (disparate impact) para classificar uma decisão como justa ou não"
+    licao: licao-091-vieses-fairness
+    exigencias: [req-evals, req-verificacao-saidas]
+  - id: out-092-1
+    descricao: "Detectar tentativas de prompt injection por casamento de padrões na entrada"
+    licao: licao-092-riscos-seguranca
+    exigencias: [req-verificacao-saidas, req-deploy-prod]
+  - id: out-092-2
+    descricao: "Pontuar o risco de jailbreak por acúmulo de sinais e aplicar um limiar de bloqueio"
+    licao: licao-092-riscos-seguranca
+    exigencias: [req-verificacao-saidas, req-deploy-prod]
+  - id: out-092-3
+    descricao: "Redigir PII (e-mails e telefones) de um texto antes de logá-lo ou enviá-lo ao modelo"
+    licao: licao-092-riscos-seguranca
+    exigencias: [req-verificacao-saidas, req-deploy-prod]
+  - id: out-093-1
+    descricao: "Classificar um sistema de IA por nível de risco usando regras explícitas"
+    licao: licao-093-legal-regulatorio-ia-responsavel
+    exigencias: [req-deploy-prod, req-verificacao-saidas]
+  - id: out-093-2
+    descricao: "Pontuar a conformidade de um sistema contra um checklist de requisitos"
+    licao: licao-093-legal-regulatorio-ia-responsavel
+    exigencias: [req-deploy-prod, req-verificacao-saidas]
+  - id: out-093-3
+    descricao: "Verificar a completude de um model card antes de publicá-lo"
+    licao: licao-093-legal-regulatorio-ia-responsavel
+    exigencias: [req-deploy-prod, req-verificacao-saidas]
+  - id: out-094-1
+    descricao: "Projetar e comparar o custo mensal de diferentes níveis de modelo sob um mesmo volume"
+    licao: licao-094-custos-sustentabilidade
+    exigencias: [req-custo-inferencia, req-deploy-prod]
+  - id: out-094-2
+    descricao: "Estimar a pegada energética (kWh) e de carbono (kg CO2) de uma carga de inferência"
+    licao: licao-094-custos-sustentabilidade
+    exigencias: [req-custo-inferencia, req-deploy-prod]
+  - id: out-094-3
+    descricao: "Quantificar a redução de custo acumulada por múltiplas alavancas de otimização"
+    licao: licao-094-custos-sustentabilidade
+    exigencias: [req-custo-inferencia, req-deploy-prod]
+  - id: out-095-1
+    descricao: "Explicar como um copiloto de IaC gera e valida configuração contra políticas"
+    licao: licao-095-ia-devops-i
+    exigencias: [req-deploy-prod]
+  - id: out-095-2
+    descricao: "Implementar detecção de anomalias robusta (AIOps) em Python puro"
+    licao: licao-095-ia-devops-i
+    exigencias: [req-deploy-prod]
+  - id: out-095-3
+    descricao: "Modelar um laço de troubleshooting estilo ReAct sobre uma base de conhecimento"
+    licao: licao-095-ia-devops-i
+    exigencias: [req-deploy-prod]
+  - id: out-096-1
+    descricao: "Implementar um scan de compliance que emite achados com severidade"
+    licao: licao-096-ia-devops-ii
+    exigencias: [req-deploy-prod]
+  - id: out-096-2
+    descricao: "Projetar previsão de custo (FinOps) por ajuste linear sobre o histórico"
+    licao: licao-096-ia-devops-ii
+    exigencias: [req-deploy-prod]
+  - id: out-096-3
+    descricao: "Combinar RAG sobre runbooks com auto-remediação protegida por guardrails"
+    licao: licao-096-ia-devops-ii
+    exigencias: [req-deploy-prod]
+  - id: out-097-1
+    descricao: "Converter uma especificação textual de UI numa árvore de componentes (text-to-UI)"
+    licao: licao-097-ia-ux-ui
+    exigencias: [req-llm-apps]
+  - id: out-097-2
+    descricao: "Gerar e pontuar variantes de layout na prototipação assistida"
+    licao: licao-097-ia-ux-ui
+    exigencias: [req-llm-apps]
+  - id: out-097-3
+    descricao: "Validar fluxos de navegação por alcançabilidade em um grafo de telas"
+    licao: licao-097-ia-ux-ui
+    exigencias: [req-llm-apps]
+  - id: out-098-1
+    descricao: "Priorizar backlog com scores RICE e WSJF de forma reprodutível"
+    licao: licao-098-ia-gestao-projetos
+    exigencias: [req-agentes]
+  - id: out-098-2
+    descricao: "Estimar prazos por simulação de Monte Carlo com percentis p50/p85"
+    licao: licao-098-ia-gestao-projetos
+    exigencias: [req-agentes]
+  - id: out-098-3
+    descricao: "Agregar um backlog por MoSCoW e calcular progresso em um relatório"
+    licao: licao-098-ia-gestao-projetos
+    exigencias: [req-agentes]
+  - id: out-099-1
+    descricao: "Definir escopo e critérios de conclusão verificáveis por componente do Micro-SaaS"
+    licao: licao-099-capstone-planejamento-arquitetura
+    exigencias: [req-rag, req-agentes, req-llm-apps]
+  - id: out-099-2
+    descricao: "Modelar a arquitetura em camadas (cliente/servidor MCP → agente → RAG) e derivar a ordem de montagem"
+    licao: licao-099-capstone-planejamento-arquitetura
+    exigencias: [req-rag, req-agentes, req-llm-apps]
+  - id: out-099-3
+    descricao: "Especificar o contrato de evidência observável que torna a integração verificável"
+    licao: licao-099-capstone-planejamento-arquitetura
+    exigencias: [req-rag, req-agentes, req-llm-apps]
+  - id: out-100-1
+    descricao: "Implementar um RAG mínimo determinístico por similaridade de cosseno"
+    licao: licao-100-capstone-implementacao-fluxo
+    exigencias: [req-rag, req-agentes, req-llm-apps]
+  - id: out-100-2
+    descricao: "Implementar um agente que seleciona e invoca ferramentas por política explícita"
+    licao: licao-100-capstone-implementacao-fluxo
+    exigencias: [req-rag, req-agentes, req-llm-apps]
+  - id: out-100-3
+    descricao: "Integrar MCP + agente + RAG e verificar a conclusão por evidência observável"
+    licao: licao-100-capstone-implementacao-fluxo
+    exigencias: [req-rag, req-agentes, req-llm-apps]
+  - id: out-101-1
+    descricao: "Caracterizar o papel do AI Engineer e diferenciá-lo de Data Scientist e ML Engineer"
+    licao: licao-101-mercado-papel-portfolio
+    exigencias: [req-llm-apps, req-deploy-prod]
+  - id: out-101-2
+    descricao: "Mapear os níveis de senioridade (Junior a Principal) por autonomia, escopo e impacto"
+    licao: licao-101-mercado-papel-portfolio
+    exigencias: [req-llm-apps, req-deploy-prod]
+  - id: out-101-3
+    descricao: "Avaliar e priorizar sinais de qualidade de um portfólio no GitHub"
+    licao: licao-101-mercado-papel-portfolio
+    exigencias: [req-llm-apps, req-deploy-prod]
+  - id: out-102-1
+    descricao: "Responder questões de entrevista sobre viés-variância com argumentação quantitativa"
+    licao: licao-102-entrevistas-fundamentos-ml
+    exigencias: [req-vies-variancia, req-calibracao, req-data-leakage, req-gradient-explosion]
+  - id: out-102-2
+    descricao: "Diagnosticar má calibração calculando o ECE de previsões probabilísticas"
+    licao: licao-102-entrevistas-fundamentos-ml
+    exigencias: [req-vies-variancia, req-calibracao, req-data-leakage, req-gradient-explosion]
+  - id: out-102-3
+    descricao: "Identificar data leakage e explicar gradient descent/backprop em contexto de entrevista"
+    licao: licao-102-entrevistas-fundamentos-ml
+    exigencias: [req-vies-variancia, req-calibracao, req-data-leakage, req-gradient-explosion]
+  - id: out-103-1
+    descricao: "Avaliar um retriever de RAG calculando precision@k, recall@k e MRR"
+    licao: licao-103-entrevistas-sistemas-ia
+    exigencias: [req-rag, req-agentes, req-evals, req-custo-inferencia]
+  - id: out-103-2
+    descricao: "Raciocinar sobre orçamento e parada de loops de agentes em entrevista"
+    licao: licao-103-entrevistas-sistemas-ia
+    exigencias: [req-rag, req-agentes, req-evals, req-custo-inferencia]
+  - id: out-103-3
+    descricao: "Escolher arquiteturas de IA sob restrições de custo, latência e qualidade"
+    licao: licao-103-entrevistas-sistemas-ia
+    exigencias: [req-rag, req-agentes, req-evals, req-custo-inferencia]
+  - id: out-104-1
+    descricao: "Resolver exercícios de live coding com strings e contagem usando estruturas adequadas"
+    licao: licao-104-exercicios-entrevista-python
+    exigencias: [req-llm-apps, req-verificacao-saidas]
+  - id: out-104-2
+    descricao: "Aplicar tabelas hash para reduzir complexidade de O(n²) para O(n)"
+    licao: licao-104-exercicios-entrevista-python
+    exigencias: [req-llm-apps, req-verificacao-saidas]
+  - id: out-104-3
+    descricao: "Implementar primitivas numéricas de ML (softmax estável, cosseno) corretamente"
+    licao: licao-104-exercicios-entrevista-python
+    exigencias: [req-llm-apps, req-verificacao-saidas]

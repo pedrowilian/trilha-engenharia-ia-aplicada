@@ -1,0 +1,5 @@
+    valor: +1.800
+historico: +0.900
+ garantia: -0.560
+    prazo: -0.480
+logito total: +2.160

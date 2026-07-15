@@ -1,0 +1,5 @@
+amostra 0: r=+2.00 kl=0.50 r_efetiva=+1.9000
+amostra 1: r=+1.00 kl=3.00 r_efetiva=+0.4000
+amostra 2: r=-0.50 kl=0.20 r_efetiva=-0.5400
+amostra 3: r=+0.40 kl=1.00 r_efetiva=+0.2000
+recompensa efetiva media = 0.4900

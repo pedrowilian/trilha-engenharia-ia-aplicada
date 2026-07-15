@@ -1,0 +1,3 @@
+taxa selecao grupo A: 0.67
+taxa selecao grupo B: 0.33
+diferenca de paridade: +0.33

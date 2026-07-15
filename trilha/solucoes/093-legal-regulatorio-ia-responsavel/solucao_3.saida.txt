@@ -1,0 +1,3 @@
+campos preenchidos: 4/5
+faltando: ['vieses_conhecidos']
+publicavel: False

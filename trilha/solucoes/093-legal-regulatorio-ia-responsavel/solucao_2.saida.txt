@@ -1,0 +1,3 @@
+requisitos atendidos: 4/5
+conformidade: 80%
+status: conforme

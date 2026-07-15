@@ -1,0 +1,3 @@
+0.05 -> converge
+0.5 -> passo unico
+1.0 -> nao converge

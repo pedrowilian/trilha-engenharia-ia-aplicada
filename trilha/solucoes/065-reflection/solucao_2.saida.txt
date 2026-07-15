@@ -1,0 +1,5 @@
+iter 1: falta=['dados', 'conclusao']
+iter 2: falta=['conclusao']
+iter 3: falta=[]
+aceito
+final: abertura dados conclusao

@@ -1,0 +1,5 @@
+tokens= 10 raciocinio=False -> leve (custo 1)
+tokens= 80 raciocinio=False -> medio (custo 3)
+tokens=300 raciocinio=False -> medio (custo 3)
+tokens= 50 raciocinio= True -> forte (custo 10)
+custo total: 17

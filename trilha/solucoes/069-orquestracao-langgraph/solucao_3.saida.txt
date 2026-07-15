@@ -1,0 +1,2 @@
+rota: ['agente', 'ferramenta', 'agente', 'ferramenta', 'agente', 'ferramenta', 'agente']
+passos do agente: 4

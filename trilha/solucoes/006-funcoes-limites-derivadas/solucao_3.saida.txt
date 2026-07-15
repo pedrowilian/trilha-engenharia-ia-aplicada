@@ -1,0 +1,3 @@
+x otimo = 2.0
+f(x otimo) = 1.0
+derivada no otimo = 0.0

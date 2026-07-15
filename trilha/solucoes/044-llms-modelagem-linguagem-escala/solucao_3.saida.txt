@@ -1,0 +1,2 @@
+N necessario      = 8.743e+10
+perda recomputada = 2.0000

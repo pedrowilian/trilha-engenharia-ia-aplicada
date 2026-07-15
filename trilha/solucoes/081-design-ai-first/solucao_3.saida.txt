@@ -1,0 +1,6 @@
+x=+0.8 conf=0.95 -> ia:positivo
+x=-1.5 conf=0.60 -> fallback:negativo
+x=+2.0 conf=0.88 -> ia:positivo
+x=-0.2 conf=0.50 -> fallback:negativo
+x=+0.1 conf=0.80 -> ia:positivo
+cobertura IA: 3/5

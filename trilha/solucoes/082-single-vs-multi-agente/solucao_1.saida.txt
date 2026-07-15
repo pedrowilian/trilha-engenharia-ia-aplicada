@@ -1,0 +1,3 @@
+subtarefas=2: single=160 multi=220 overhead=60
+subtarefas=4: single=320 multi=440 overhead=120
+subtarefas=6: single=480 multi=660 overhead=180

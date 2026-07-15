@@ -1,0 +1,3 @@
+ranking denso: ['d2', 'd1', 'd3']
+ranking esparso: ['d1', 'd2', 'd3']
+top-1 denso: d2 | top-1 esparso: d1

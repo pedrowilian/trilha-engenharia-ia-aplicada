@@ -1,0 +1,4 @@
+episodios: 3
+python e linguagem -> [1.0, 0.0, 0.0]
+cobra python -> [0.8, 0.2, 0.0]
+cafe quente -> [0.0, 0.0, 1.0]

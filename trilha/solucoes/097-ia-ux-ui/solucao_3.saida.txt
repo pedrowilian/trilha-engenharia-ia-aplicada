@@ -1,0 +1,2 @@
+ida-e-volta exata: True
+componentes: 2

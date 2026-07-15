@@ -1,0 +1,3 @@
+json: {"meta": {"ativo": true, "idade": 30}, "nome": "Ana", "tags": ["a", "b"]}
+igual? True
+identico ao re-serializar? True

@@ -1,0 +1,2 @@
+n=3: supervisor=3 hierarquica=2 grupo=3
+n=5: supervisor=5 hierarquica=4 grupo=10

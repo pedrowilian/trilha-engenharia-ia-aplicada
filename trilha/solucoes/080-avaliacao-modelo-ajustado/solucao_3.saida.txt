@@ -1,0 +1,6 @@
+epocas: 7
+melhor epoca (min val): 3
+val minima: 0.55
+gap treino-val na melhor epoca: 0.17
+overfitting detectado: True
+recomendacao: early stopping na epoca 3

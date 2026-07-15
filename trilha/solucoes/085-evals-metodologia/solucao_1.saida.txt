@@ -1,0 +1,6 @@
+2 + 2: previsto='4' esperado='4' ok=True
+3 * 3: previsto='9' esperado='9' ok=True
+10 - 4: previsto='6' esperado='6' ok=True
+5 / 2: previsto='2' esperado='2.5' ok=False
+7 + 8: previsto='15' esperado='15' ok=True
+accuracy: 0.8000 (4/5)

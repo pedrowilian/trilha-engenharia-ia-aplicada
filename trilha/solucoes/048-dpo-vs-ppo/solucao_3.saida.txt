@@ -1,0 +1,3 @@
+margens: [0.12, -0.06, 0.06, 0.1, 0.0]
+perda DPO media = 0.6719
+acuracia de preferencia = 0.60

@@ -1,0 +1,5 @@
+centroide mais proximo: c2
+ivf top-1: v8 dist=0.0000
+flat top-1: v8 dist=0.0000
+comparacoes ivf: 6 | flat: 9
+resultados coincidem: True

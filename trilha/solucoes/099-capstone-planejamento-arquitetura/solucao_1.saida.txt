@@ -1,0 +1,4 @@
+RAG: 2/2 -> ok
+Agente: 1/2 -> pendente
+MCP: 2/2 -> ok
+capstone concluido: False

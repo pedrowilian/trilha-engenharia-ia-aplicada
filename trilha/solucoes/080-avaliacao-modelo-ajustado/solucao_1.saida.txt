@@ -1,0 +1,3 @@
+acertos: 4/6
+acuracia: 0.667
+formato valido: 0.833

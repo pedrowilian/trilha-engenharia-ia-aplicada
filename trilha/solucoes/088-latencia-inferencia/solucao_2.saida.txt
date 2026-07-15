@@ -1,0 +1,5 @@
+p50: 202 ms
+p95: 800 ms
+p99: 800 ms
+media: 293.4 ms
+max: 800 ms

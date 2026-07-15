@@ -1,0 +1,2 @@
+caminho: [0, 3, 4]
+no encontrado: 4 (dist 0.2000)

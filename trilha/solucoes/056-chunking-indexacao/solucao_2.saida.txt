@@ -1,0 +1,6 @@
+j0: termo a termo b
+j1: termo b termo c
+j2: termo c termo d
+j3: termo d termo e
+j4: termo e termo f
+n_chunks: 5

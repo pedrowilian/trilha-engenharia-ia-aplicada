@@ -1,0 +1,5 @@
+buffer: ['p1']
+buffer: ['p1', 'p2']
+buffer: ['p2', 'p3']
+buffer: ['p3', 'p4']
+janela final: ['p3', 'p4']

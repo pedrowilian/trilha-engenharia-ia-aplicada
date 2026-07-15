@@ -1,0 +1,2 @@
+partes: 3
+final: dados=ok | modelo=treinado | relatorio=enviado

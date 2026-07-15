@@ -1,0 +1,4 @@
+SLA=  50ms -> nenhum (custo 0)
+SLA= 120ms -> leve (custo 1)
+SLA= 400ms -> medio (custo 4)
+SLA= 800ms -> forte (custo 12)

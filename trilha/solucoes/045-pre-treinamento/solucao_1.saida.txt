@@ -1,0 +1,3 @@
+pares de treino    = 5
+cross-entropy media= 1.1756
+perplexidade       = 3.2402

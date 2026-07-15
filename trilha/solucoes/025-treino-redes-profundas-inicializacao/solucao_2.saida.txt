@@ -1,0 +1,3 @@
+n_in=   16: Xavier std=0.2500 He std=0.3536
+n_in=  256: Xavier std=0.0625 He std=0.0884
+n_in= 1024: Xavier std=0.0312 He std=0.0442

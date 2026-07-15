@@ -1,0 +1,3 @@
+T=  8: rnn=  8 passos | atencao=1 passo | reducao=8x
+T= 32: rnn= 32 passos | atencao=1 passo | reducao=32x
+T=128: rnn=128 passos | atencao=1 passo | reducao=128x

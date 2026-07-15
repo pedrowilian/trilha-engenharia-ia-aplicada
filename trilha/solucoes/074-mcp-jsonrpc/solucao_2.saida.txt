@@ -1,0 +1,3 @@
+{"id": 1, "jsonrpc": "2.0", "result": {"valor": 42}}
+{"error": {"code": -32602, "message": "Invalid params"}, "id": 2, "jsonrpc": "2.0"}
+exclusivo? True

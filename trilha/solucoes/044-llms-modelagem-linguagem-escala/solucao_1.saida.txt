@@ -1,0 +1,6 @@
+P(    o |   <s>) = 0.700
+P( gato |     o) = 0.800
+P( foge |  gato) = 0.300
+P( </s> |  foge) = 0.900
+log P(sequencia) = -1.8892
+P(sequencia)     = 0.1512

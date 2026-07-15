@@ -1,0 +1,6 @@
+Texto: adorei o filme
+Rotulo: positivo
+Texto: que experiencia horrivel
+Rotulo: negativo
+Texto: o atendimento foi otimo
+Rotulo:

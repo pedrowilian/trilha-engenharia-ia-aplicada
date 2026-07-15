@@ -1,0 +1,5 @@
+shape delta: (8, 5)
+posto de delta (BA): 3
+posto de W0 (cheia): 5
+parametros LoRA (B,A): 39
+parametros da matriz cheia: 40

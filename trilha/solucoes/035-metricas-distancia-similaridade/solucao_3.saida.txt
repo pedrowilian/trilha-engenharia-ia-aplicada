@@ -1,0 +1,3 @@
+dot_norm=0.9600 cos=0.9600 iguais=True
+dot_norm=0.0000 cos=0.0000 iguais=True
+dot_norm=1.0000 cos=1.0000 iguais=True

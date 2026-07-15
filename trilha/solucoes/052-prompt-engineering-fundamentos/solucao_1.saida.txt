@@ -1,0 +1,5 @@
+[SISTEMA] Voce e um assistente juridico.
+[INSTRUCAO] Responda apenas com base no contexto.
+[CONTEXTO] O contrato vence em 30 dias.
+[CONSULTA] Quando vence o contrato?
+linhas: 4

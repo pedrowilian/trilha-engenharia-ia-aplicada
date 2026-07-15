@@ -1,0 +1,4 @@
+n amostras: 7
+media: 0.7071
+aprovados (>= 0.7): 4
+taxa de aprovacao: 0.5714

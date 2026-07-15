@@ -1,0 +1,4 @@
+Must: 2
+Should: 1
+Could: 2
+progresso: 40%

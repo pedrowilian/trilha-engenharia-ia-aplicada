@@ -1,0 +1,2 @@
+coeficientes: [2.0, 1.0]
+reconstrucao: [5.0, 5.0]

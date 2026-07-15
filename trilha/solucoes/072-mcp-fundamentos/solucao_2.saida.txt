@@ -1,0 +1,5 @@
+num clients: 3
+  drive -> server-drive
+  jira -> server-jira
+  slack -> server-slack
+relacao 1:1? True

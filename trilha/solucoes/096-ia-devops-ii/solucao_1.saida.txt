@@ -1,0 +1,2 @@
+[MEDIUM] armazenamento sem criptografia
+total: 1

@@ -1,0 +1,4 @@
+mse base: 0.010
+feature x0: importancia=8.243
+feature x1: importancia=0.000
+feature x2: importancia=1.893

@@ -1,0 +1,3 @@
+sem filtro: ['r1', 'r2', 'r3']
+filtro idioma=pt: ['r1', 'r3', 'r4']
+filtro idioma=pt ano=2023: ['r1', 'r4']

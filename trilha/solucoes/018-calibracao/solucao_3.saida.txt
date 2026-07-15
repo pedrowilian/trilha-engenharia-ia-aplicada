@@ -1,0 +1,4 @@
+ECE com T=1.0: 0.1432
+melhor T: 3.0
+ECE com melhor T: 0.0127
+temperature scaling melhorou: True

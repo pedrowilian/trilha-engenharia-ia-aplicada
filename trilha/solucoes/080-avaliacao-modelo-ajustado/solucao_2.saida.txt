@@ -1,0 +1,5 @@
+acuracia base    : 0.625
+acuracia ajustado: 1.000
+lift absoluto    : +0.375
+lift relativo    : +60.0%
+vencedor: ajustado

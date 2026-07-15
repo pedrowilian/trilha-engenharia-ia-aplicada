@@ -1,0 +1,2 @@
+melhor acuracia em 100 epocas: 2/4
+resolveu o XOR (4/4): False

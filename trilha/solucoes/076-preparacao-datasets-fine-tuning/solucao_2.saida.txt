@@ -1,0 +1,4 @@
+antes : {'spam': 5, 'ham': 2}
+minimo: 2
+depois: {'ham': 2, 'spam': 2}
+total : 4

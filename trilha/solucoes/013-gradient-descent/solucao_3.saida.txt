@@ -1,0 +1,3 @@
+     batch: w=2.00 atualizacoes=300
+mini-batch: w=2.00 atualizacoes=900
+       sgd: w=2.00 atualizacoes=1500

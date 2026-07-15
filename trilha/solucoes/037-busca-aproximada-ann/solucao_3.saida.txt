@@ -1,0 +1,4 @@
+exato top-3: ['a2', 'b2', 'a1']
+nprobe=1: comparacoes=3 recall@3=0.6667
+nprobe=2: comparacoes=6 recall@3=1.0000
+nprobe=3: comparacoes=9 recall@3=1.0000

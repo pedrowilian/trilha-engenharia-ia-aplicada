@@ -1,0 +1,4 @@
+r_chosen   = +0.0500
+r_rejected = -0.1000
+margem     = +0.1500
+perda DPO  = 0.6210

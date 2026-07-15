@@ -1,0 +1,3 @@
+modelo   1B  ->     12.0 GB
+modelo   8B  ->     96.0 GB
+modelo  70B  ->    840.0 GB

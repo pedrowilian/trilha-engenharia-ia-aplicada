@@ -1,0 +1,4 @@
+ unhappy -> ['un', '##happy']
+ playing -> ['play', '##ing']
+playedly -> ['play', '##ed', '##ly']
+     xyz -> ['[UNK]']

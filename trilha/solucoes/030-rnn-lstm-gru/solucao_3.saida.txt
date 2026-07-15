@@ -1,0 +1,2 @@
+forget=0.5: c apos 10 passos = 0.0010
+forget=0.95: c apos 10 passos = 0.5987

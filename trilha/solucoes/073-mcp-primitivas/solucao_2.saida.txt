@@ -1,0 +1,3 @@
+tools: ['concatenar', 'dobro']
+dobro(21) = 42
+concatenar = mcp

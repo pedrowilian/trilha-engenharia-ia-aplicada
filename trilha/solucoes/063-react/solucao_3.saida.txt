@@ -1,0 +1,8 @@
+Thought: Subtrair 4 de 10
+Action: sub(10, 4)
+Observation: 6
+Thought: Somar 1 ao resultado
+Action: soma(6, 1)
+Observation: 7
+Thought: Pronto
+Final Answer: 7

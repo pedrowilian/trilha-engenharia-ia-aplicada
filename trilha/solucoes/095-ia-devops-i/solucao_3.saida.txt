@@ -1,0 +1,3 @@
+fila_cheia -> escalar_workers
+cpu_alta -> otimizar_query
+estado final: ok

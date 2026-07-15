@@ -1,0 +1,4 @@
+tokens texto : 7
+tokens imagem: 256
+tokens audio : 75
+total        : 338

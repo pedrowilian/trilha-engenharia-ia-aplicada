@@ -1,0 +1,4 @@
+estatico de 'manga': [0.5, 0.5]
+contextual (comer, fruta):   [0.8, 0.2]
+contextual (camisa, costura): [0.2, 0.8]
+o contexto muda a representacao: True

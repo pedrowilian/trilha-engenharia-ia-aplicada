@@ -1,0 +1,3 @@
+postings 'windows': ['c0', 'c2']
+postings 'instalacao': ['c0', 'c1']
+instalacao windows: ['c0']

@@ -1,0 +1,3 @@
+json: {"arguments": {"dia": "segunda", "hora": 9, "lembrete": true}, "name": "agendar"}
+igual? True
+re-serializa identico? True

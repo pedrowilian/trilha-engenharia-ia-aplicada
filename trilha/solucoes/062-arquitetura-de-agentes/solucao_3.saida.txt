@@ -1,0 +1,2 @@
+objetivo=8: estado=8 passos=4 -> sucesso
+objetivo=7: estado=12 passos=6 -> parou no limite

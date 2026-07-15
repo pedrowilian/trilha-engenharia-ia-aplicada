@@ -1,0 +1,5 @@
+        grande: custo=$12.0/1k p95=2000ms viavel=False
+  grande+cache: custo=$7.0/1k p95=1200ms viavel=False
+   pequeno+rag: custo=$3.5/1k p95=800ms viavel=True
+       cascata: custo=$5.0/1k p95=1150ms viavel=True
+escolhida (menor custo entre viaveis): pequeno+rag

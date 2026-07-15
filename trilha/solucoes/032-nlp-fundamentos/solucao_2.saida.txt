@@ -1,0 +1,3 @@
+     o: df=3 idf=1.0000 tfidf=0.3333
+  gato: df=2 idf=1.2877 tfidf=0.4292
+ dorme: df=1 idf=1.6931 tfidf=0.5644

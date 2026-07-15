@@ -1,0 +1,4 @@
+F1 com limiar 0.5: 0.4323
+melhor limiar: 0.58
+melhor F1: 0.4941
+limiar ajustado supera 0.5: True

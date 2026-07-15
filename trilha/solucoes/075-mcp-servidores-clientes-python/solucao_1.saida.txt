@@ -1,0 +1,2 @@
+metodos: ['eco']
+resposta: {'jsonrpc': '2.0', 'id': 5, 'result': {'texto': 'oi'}}

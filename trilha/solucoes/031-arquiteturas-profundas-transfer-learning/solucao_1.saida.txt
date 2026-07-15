@@ -1,0 +1,3 @@
+plain apos 50 camadas, norma: 0.0000
+residual (F=0) preserva a entrada: True
+norma da entrada: 1.6234

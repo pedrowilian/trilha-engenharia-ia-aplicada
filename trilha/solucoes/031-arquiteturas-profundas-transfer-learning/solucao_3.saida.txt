@@ -1,0 +1,2 @@
+acuracia com features uteis (pre-treinadas): 0.9950
+acuracia com features aleatorias:            0.5550

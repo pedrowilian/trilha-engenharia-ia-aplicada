@@ -1,0 +1,2 @@
+g=[0.3, 0.4] norma=0.5000 clipado=False norma_final=0.5000
+g=[6.0, 8.0] norma=10.0000 clipado=True norma_final=5.0000

@@ -1,0 +1,4 @@
+camada 3->5: 3*5+5 = 20 parametros
+camada 5->5: 5*5+5 = 30 parametros
+camada 5->2: 5*2+2 = 12 parametros
+total de parametros: 62

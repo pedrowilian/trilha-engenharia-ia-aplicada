@@ -1,0 +1,3 @@
+concluiu sem incidentes
+parou: acao repetida 'z'
+parou: limite de 5 passos

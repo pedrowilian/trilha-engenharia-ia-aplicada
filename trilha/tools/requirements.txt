@@ -1,0 +1,14 @@
+# Dependências do validador da Trilha (tools/validar_trilha.py) e seus testes.
+# Instalar com: pip install -r trilha/tools/requirements.txt
+
+# Parsing do front-matter YAML das lições e dos artefatos competencias.yaml / progresso.yaml
+pyyaml>=6.0,<7.0
+
+# Construção e checagem do DAG de pré-requisitos (aciclicidade, ordenação topológica)
+networkx>=3.0,<4.0
+
+# Execução dos testes (unitários e baseados em propriedade) do validador
+pytest>=8.0,<9.0
+
+# Testes baseados em propriedade das 6 propriedades de correção do design
+hypothesis>=6.100,<7.0

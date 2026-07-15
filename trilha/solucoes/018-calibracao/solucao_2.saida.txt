@@ -1,0 +1,3 @@
+ECE calibrado:      0.0142
+ECE superconfiante: 0.1238
+calibrado tem ECE menor: True

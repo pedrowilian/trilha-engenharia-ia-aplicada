@@ -1,0 +1,2 @@
+h (camada oculta): [0.0, 2.0, 2.0]
+y (saida): [-2.0, 2.0]

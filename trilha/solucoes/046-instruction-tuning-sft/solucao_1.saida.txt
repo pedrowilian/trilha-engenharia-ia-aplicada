@@ -1,0 +1,3 @@
+tokens: ['<|user|>', 'Some', '2', 'e', '3', '<|assistant|>', '5', '<|end|>']
+mascara: [0, 0, 0, 0, 0, 0, 1, 1]
+tokens de resposta: 2

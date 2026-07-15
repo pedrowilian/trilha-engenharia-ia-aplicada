@@ -1,0 +1,4 @@
+n= 10: variancia=0.3882
+n= 40: variancia=0.0935
+n=160: variancia=0.0239
+variancia cai com mais dados: True

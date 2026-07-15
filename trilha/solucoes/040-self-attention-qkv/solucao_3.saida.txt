@@ -1,0 +1,3 @@
+soma dos pesos: 1.0
+saida (media ponderada): [5.5 4.5]
+dentro do envoltorio convexo de V: True

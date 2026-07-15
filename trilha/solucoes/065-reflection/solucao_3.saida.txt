@@ -1,0 +1,4 @@
+versao 0: nota=3
+versao 1: nota=6
+versao 2: nota=9
+aceito por qualidade

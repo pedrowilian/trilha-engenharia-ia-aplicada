@@ -1,0 +1,5 @@
+taxa A  = 0.0800
+taxa B  = 0.1300
+z       = 2.5789
+p-valor = 0.0099
+rejeita H0 (alpha=0.05)? True

@@ -1,0 +1,5 @@
+par 0: margem=+2.00  perda=0.1269
+par 1: margem=-1.00  perda=1.3133
+par 2: margem=+0.00  perda=0.6931
+par 3: margem=+1.00  perda=0.3133
+perda media = 0.6116

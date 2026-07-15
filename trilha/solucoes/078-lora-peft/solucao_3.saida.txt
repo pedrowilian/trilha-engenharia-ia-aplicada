@@ -1,0 +1,4 @@
+||y|| base (so W0): 2.4876
+alpha= 2: escala=1.0 ||y||=6.5127
+alpha= 4: escala=2.0 ||y||=12.4734
+alpha=16: escala=8.0 ||y||=49.5014

@@ -1,0 +1,3 @@
+w: analitico=-0.268941 numerico=-0.268941
+b: analitico=0.268941 numerico=0.268941
+gradientes conferem: True

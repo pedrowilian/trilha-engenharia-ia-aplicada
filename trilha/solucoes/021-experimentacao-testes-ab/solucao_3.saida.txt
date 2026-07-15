@@ -1,0 +1,3 @@
+falso-positivo so no fim:   0.050
+falso-positivo com peeking: 0.182
+peeking infla o falso-positivo: True

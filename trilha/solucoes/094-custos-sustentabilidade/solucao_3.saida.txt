@@ -1,0 +1,5 @@
+baseline: $4,500.00
++     cache 30%: $3,150.00
++  modelo menor: $1,575.00
++      batching: $1,417.50
+reducao total: 68%

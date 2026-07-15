@@ -1,0 +1,28 @@
+# --- Material de referência de terceiros (NÃO publicar) ---
+# Ementa original da UNIPDS: conteúdo de terceiros com marca/telefone — fica só local.
+Ementa_Detalhada__Engenheria_de_IA_Aplicada.pdf
+*.pdf
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Testes / ferramentas ---
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+
+# --- Sistema operacional / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# --- Rascunhos locais de autoria (não fazem parte do currículo publicado) ---
+.scratch/

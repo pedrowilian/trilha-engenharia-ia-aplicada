@@ -1,0 +1,5 @@
+tokens entrada : 1200
+tokens saida   : 400
+custo entrada  : $0.6000
+custo saida    : $0.6000
+custo total    : $1.2000

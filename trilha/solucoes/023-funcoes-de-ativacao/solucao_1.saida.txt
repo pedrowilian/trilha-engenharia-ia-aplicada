@@ -1,0 +1,4 @@
+tanh(0.8)      = 0.664037
+deriv analitica= 0.559055
+deriv numerica = 0.559055
+diferenca < 1e-6: True

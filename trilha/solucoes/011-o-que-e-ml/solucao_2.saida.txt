@@ -1,0 +1,4 @@
+iteracoes ate convergir: 3
+centroides finais: [2.5000, 10.7500]
+grupo 0: [2.0, 2.5, 3.0]
+grupo 1: [10.0, 10.5, 11.0, 11.5]

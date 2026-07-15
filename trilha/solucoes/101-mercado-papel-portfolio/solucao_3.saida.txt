@@ -1,0 +1,4 @@
+   sistemas_rag: gap=3 peso=3 prioridade=9
+          evals: gap=2 peso=2 prioridade=4
+    comunicacao: gap=2 peso=2 prioridade=4
+        agentes: gap=1 peso=2 prioridade=2

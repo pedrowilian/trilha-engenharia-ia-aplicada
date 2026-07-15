@@ -1,0 +1,2 @@
+energia: 150.0 kWh/mes
+emissao: 45.0 kg CO2/mes

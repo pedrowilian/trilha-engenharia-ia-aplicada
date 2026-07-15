@@ -1,0 +1,4 @@
+tipo: dict
+nome: Ana
+idade: 30
+ativo: True

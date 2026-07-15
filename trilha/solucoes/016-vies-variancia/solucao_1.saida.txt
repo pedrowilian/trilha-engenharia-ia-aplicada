@@ -1,0 +1,4 @@
+grau 0: vies^2=0.0832 variancia=0.0670
+grau 3: vies^2=0.0003 variancia=0.1899
+grau 0 tem mais vies: True
+grau 3 tem mais variancia: True

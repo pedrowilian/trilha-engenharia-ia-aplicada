@@ -1,0 +1,3 @@
+mais proximo: v1
+calculos de distancia: 8
+custo O(n*d) = 8 * 4 = 32 operacoes por consulta

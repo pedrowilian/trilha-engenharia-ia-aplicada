@@ -1,0 +1,3 @@
+tokens antes: 11
+tokens depois: 5
+reducao: 6

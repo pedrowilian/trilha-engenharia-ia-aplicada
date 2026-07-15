@@ -1,0 +1,12 @@
+tamanho do vocabulario: 24
+texto:        'busca vetorial é incrível'
+num ids:      25
+reconstruido: 'busca vetorial é incrível'
+igual ao original: True
+ids estaveis (2o parse igual): True
+texto:        'RAG: tokens -> ids -> tokens'
+num ids:      28
+reconstruido: 'RAG: tokens -> ids -> tokens'
+igual ao original: True
+ids estaveis (2o parse igual): True
+round-trip OK

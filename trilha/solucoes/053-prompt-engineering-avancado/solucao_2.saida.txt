@@ -1,0 +1,3 @@
+passo: total = 3 * 4 = 12
+passo: sobram = 12 - 5 = 7
+resposta: 7

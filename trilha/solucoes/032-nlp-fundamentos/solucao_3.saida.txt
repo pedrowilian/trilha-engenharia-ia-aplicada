@@ -1,0 +1,4 @@
+1-grams (5): ['o', 'gato', 'e', 'o', 'cachorro']
+2-grams (4): ['o gato', 'gato e', 'e o', 'o cachorro']
+3-grams (3): ['o gato e', 'gato e o', 'e o cachorro']
+bigrama mais comum: o gato -> 2

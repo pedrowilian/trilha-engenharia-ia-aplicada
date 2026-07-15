@@ -1,0 +1,4 @@
+convergiu na epoca: 3
+w=[1. 1.] b=-1.0
+predicoes=[0, 1, 1, 1] alvo=[0, 1, 1, 1]
+todos corretos: True

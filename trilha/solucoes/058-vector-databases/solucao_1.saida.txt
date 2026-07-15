@@ -1,0 +1,3 @@
+v4 dist=1.4142
+v2 dist=2.0000
+comparacoes: 4

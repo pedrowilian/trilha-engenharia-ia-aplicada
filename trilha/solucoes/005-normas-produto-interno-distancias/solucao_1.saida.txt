@@ -1,0 +1,4 @@
+L1=5.0000 L2=3.0000 Linf=2.0000
+normalizado: [0.3333, -0.6667, 0.6667]
+norma do normalizado: 1.0000
+OK

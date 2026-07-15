@@ -1,0 +1,3 @@
+beta=0.05: margem=0.100 perda=0.6444
+beta=0.1: margem=0.200 perda=0.5981
+beta=0.5: margem=1.000 perda=0.3133

@@ -1,0 +1,8 @@
+criterio                     peso  RAG   FT
+conhecimento muda rapido        3    5    1
+comportamento/estilo fixo       3    2    5
+controle total do modelo        1    1    5
+setup rapido                    2    5    1
+-------------------------------------------
+TOTAL ponderado                     32   25
+vencedor: RAG

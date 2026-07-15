@@ -1,0 +1,2 @@
+BN -> media por COLUNA: [0. 0. 0.]
+LN -> media por LINHA:  [0. 0.]

@@ -1,0 +1,3 @@
+passos por epoca = 100000
+epocas completas = 2
+tokens vistos    = 1.000e+11

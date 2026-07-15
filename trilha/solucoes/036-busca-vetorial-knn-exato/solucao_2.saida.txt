@@ -1,0 +1,4 @@
+top-3 vizinhos de [1.0, 1.0]:
+doc_b: 1.0000
+doc_d: 1.0000
+doc_e: 1.0000

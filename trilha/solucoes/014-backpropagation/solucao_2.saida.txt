@@ -1,0 +1,4 @@
+perda antes:  1.7014
+dL/dw=-1.2264 dL/db=-0.8176
+perda depois: 0.7825
+perda diminuiu: True

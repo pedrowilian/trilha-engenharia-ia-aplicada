@@ -1,0 +1,3 @@
+ativacoes ocultas: [0.4721 0.0841 0.6529 0.6715]
+linhas de dW1 identicas: False
+simetria quebrada: True

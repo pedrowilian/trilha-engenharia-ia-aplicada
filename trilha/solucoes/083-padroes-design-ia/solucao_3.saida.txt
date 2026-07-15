@@ -1,0 +1,5 @@
+     ler documento: revisao_humana
+      excluir base: aprovacao
+  sugerir resposta: automatico
+ alterar permissao: aprovacao
+contagem: {'automatico': 1, 'revisao_humana': 1, 'aprovacao': 2}

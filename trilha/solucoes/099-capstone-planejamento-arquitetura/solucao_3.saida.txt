@@ -1,0 +1,3 @@
+completo: completo=True ausentes=[]
+sem_rag: completo=False ausentes=['rag']
+vazio: completo=False ausentes=['rag', 'agente', 'mcp']

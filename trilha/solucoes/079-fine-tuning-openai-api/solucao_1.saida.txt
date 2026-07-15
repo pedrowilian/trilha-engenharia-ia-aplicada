@@ -1,0 +1,2 @@
+upload ok: file-0001 3 processed
+erro capturado: linha 4 invalida: sem 'messages'

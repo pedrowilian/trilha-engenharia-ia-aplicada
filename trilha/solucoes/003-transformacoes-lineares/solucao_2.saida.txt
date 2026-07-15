@@ -1,0 +1,3 @@
+pontos: [[1.0, 0.0], [0.0, 2.0], [3.0, -4.0]]
+rotacionados: [[-1.0, 0.0], [0.0, -2.0], [-3.0, 4.0]]
+dupla rotacao volta ao inicio? True

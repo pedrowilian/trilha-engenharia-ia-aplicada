@@ -1,0 +1,3 @@
+nll por token   : [0.9163, 0.3567, 1.204, 0.0513, 0.6931, 0.5108]
+tokens de resposta: 3
+perda mascarada   = 0.4184

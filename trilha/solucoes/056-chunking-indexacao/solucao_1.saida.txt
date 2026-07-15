@@ -1,0 +1,5 @@
+c0: o gato dorme no sofa
+c1: o cachorro corre no parque
+c2: o passaro voa alto no
+c3: ceu azul
+n_chunks: 4

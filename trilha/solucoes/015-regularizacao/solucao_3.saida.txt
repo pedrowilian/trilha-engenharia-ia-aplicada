@@ -1,0 +1,3 @@
+melhor epoch: 5 (val=0.44)
+parou no epoch: 8
+epochs economizados: 1

@@ -1,0 +1,2 @@
+std por camada: [0.7814 0.8016 0.7096 0.7557 0.6952]
+todas as camadas saudaveis (0.3<std<1.0): True

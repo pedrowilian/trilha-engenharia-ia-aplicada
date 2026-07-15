@@ -1,0 +1,6 @@
+k= 1: vies2=16.00 var=0.05 ruido=0.50 total=16.55
+k= 5: vies2=3.20 var=0.25 ruido=0.50 total=3.95
+k=10: vies2=1.60 var=0.50 ruido=0.50 total=2.60
+k=15: vies2=1.07 var=0.75 ruido=0.50 total=2.32
+k=20: vies2=0.80 var=1.00 ruido=0.50 total=2.30
+complexidade otima (1..20): 18

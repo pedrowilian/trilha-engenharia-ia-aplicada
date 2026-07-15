@@ -1,0 +1,4 @@
+KL(p||q)      = 0.1228
+H(p,q)        = 1.2796
+H(p)+KL(p||q) = 1.2796
+identidade ok? True

@@ -1,0 +1,3 @@
+Q estimado: [0.118, 0.222, 0.557, 0.901]
+braco escolhido: 3
+correto: True

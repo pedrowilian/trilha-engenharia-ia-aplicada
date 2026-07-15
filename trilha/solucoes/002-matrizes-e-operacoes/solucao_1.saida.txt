@@ -1,0 +1,2 @@
+A@B (do zero): [[19.0, 22.0], [43.0, 50.0]]
+confere numpy? True

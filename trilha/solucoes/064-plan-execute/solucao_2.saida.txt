@@ -1,0 +1,4 @@
+incrementar: 4
+triplicar: 12
+subtrair2: 10
+resultado: 10

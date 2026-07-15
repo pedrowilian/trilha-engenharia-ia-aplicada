@@ -1,0 +1,4 @@
+entrada: [-3.  -1.  -0.2  0.   0.7  1.5  4. ]
+relu:    [0.  0.  0.  0.  0.7 1.5 4. ]
+ativos=3 desligados=4
+ativacao media: 0.8857

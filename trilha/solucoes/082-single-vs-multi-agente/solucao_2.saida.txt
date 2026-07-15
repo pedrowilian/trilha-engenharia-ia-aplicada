@@ -1,0 +1,3 @@
+latencia single (sequencial): 720
+latencia multi (paralelo): 370
+ganho: 350

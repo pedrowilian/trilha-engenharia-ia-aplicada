@@ -1,0 +1,3 @@
+cross-entropy (confiante): 0.0659
+cross-entropy (indeciso):  1.0019
+menor perda = mais confianca na classe certa: True

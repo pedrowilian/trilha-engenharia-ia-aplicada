@@ -1,0 +1,3 @@
+relatorios: RICE=2700
+alertas: RICE=1600
+temas: RICE=500

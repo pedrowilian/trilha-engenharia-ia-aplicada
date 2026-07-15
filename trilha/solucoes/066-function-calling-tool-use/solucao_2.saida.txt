@@ -1,0 +1,2 @@
+concat -> abcd
+repetir -> xyxyxy

@@ -1,0 +1,6 @@
+nota=1.0000 <- 'Embeddings mapeiam texto para vetores densos'
+nota=1.0000 <- 'Tokenizacao quebra texto em tokens'
+nota=1.0000 <- 'A atencao usa query key value'
+nota=0.6667 <- 'Dropout e uma forma de regularizacao'
+media do juiz: 0.9167
+aprovados (>= 0.75): 3/4

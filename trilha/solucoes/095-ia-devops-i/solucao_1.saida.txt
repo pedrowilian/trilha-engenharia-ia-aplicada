@@ -1,0 +1,2 @@
+servico: cache
+erros: ['replicas<2', 'porta fora da faixa']

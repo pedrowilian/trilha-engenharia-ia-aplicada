@@ -1,0 +1,6 @@
+    embed:   50 ms  $0.0001
+   search:   30 ms  $0.0000
+ generate:  420 ms  $0.0021
+    guard:   25 ms  $0.0003
+    TOTAL:  525 ms  $0.0025
+gargalo: generate (420 ms)

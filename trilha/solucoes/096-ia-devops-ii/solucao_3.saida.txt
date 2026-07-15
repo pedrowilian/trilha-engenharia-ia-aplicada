@@ -1,0 +1,3 @@
+reiniciar_servico -> aplicado (dry-run ok)
+limpar_logs_antigos -> requer_aprovacao (escalar)
+sem_runbook -> escalar

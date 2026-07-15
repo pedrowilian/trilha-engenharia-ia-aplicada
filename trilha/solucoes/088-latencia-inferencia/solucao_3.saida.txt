@@ -1,0 +1,3 @@
+concorrencia media (L = lambda*W): 60.0
+slots necessarios (teto): 60
+vazao por slot: 2.00 req/s

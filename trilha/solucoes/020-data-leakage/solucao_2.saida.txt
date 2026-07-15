@@ -1,0 +1,5 @@
+media (errado, todos os dados): 99.0236
+media (certo, so treino):       96.2161
+teste[0] errado: 0.8696
+teste[0] certo:  0.9039
+houve vazamento nas estatisticas: True

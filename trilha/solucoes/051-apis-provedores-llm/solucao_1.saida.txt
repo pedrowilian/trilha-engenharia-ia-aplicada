@@ -1,0 +1,3 @@
+n mensagens: 2
+papeis: ['system', 'user']
+json: {"messages": [{"content": "Voce e um assistente conciso.", "role": "system"}, {"content": "Explique JSON em uma frase.", "role": "user"}], "model": "llm-pequeno", "temperature": 0.2}

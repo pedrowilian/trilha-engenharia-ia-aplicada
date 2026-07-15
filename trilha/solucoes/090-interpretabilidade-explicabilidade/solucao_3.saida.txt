@@ -1,0 +1,4 @@
+f0: global=0.523 local[0]=+0.086
+f1: global=0.958 local[0]=-0.474
+f2: global=0.249 local[0]=+0.401
+feature mais importante (global): f1

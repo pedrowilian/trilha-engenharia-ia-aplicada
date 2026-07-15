@@ -1,0 +1,4 @@
+        checar CEP: regras
+  resumir contrato: ia+humano
+    traduzir frase: ia
+     somar valores: regras

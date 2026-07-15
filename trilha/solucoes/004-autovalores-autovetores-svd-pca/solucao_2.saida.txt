@@ -1,0 +1,4 @@
+Valores singulares: [3.0, 2.0, 1.0]
+rank-1: erro=2.2361 energia=64.3%
+rank-2: erro=1.0000 energia=92.9%
+rank-3: erro=0.0000 energia=100.0%

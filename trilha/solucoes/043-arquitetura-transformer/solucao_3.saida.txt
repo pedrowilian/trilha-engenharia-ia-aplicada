@@ -1,0 +1,4 @@
+entrada shape: (4, 6) -> saida shape: (4, 6)
+shape preservado: True
+media por linha (apos norm): [-0. -0. -0.  0.]
+Y[0] = [ 0.2019  0.521  -1.7137  0.4867  1.3445 -0.8404]

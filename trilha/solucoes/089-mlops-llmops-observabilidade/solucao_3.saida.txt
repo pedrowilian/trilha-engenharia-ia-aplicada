@@ -1,0 +1,3 @@
+erro: baseline=0.03 canary=0.02 ok=True
+p95: baseline=500 canary=510 ok=True
+decisao: promover

@@ -1,0 +1,4 @@
+doc-senha: 0.5547
+doc-fatura: 0.0000
+doc-reembolso: 0.0000
+top-1: doc-senha

@@ -1,0 +1,3 @@
+custo/dia sem cache: $42.00
+custo/dia com cache (hit 30%): $29.40
+economia diaria: $12.60 (30%)
