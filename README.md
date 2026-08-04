@@ -147,8 +147,6 @@ trilha/
 ├── competencias.yaml
 ├── progresso.yaml   # estado de estudo (nao_iniciada / em_andamento / concluida)
 └── TEMPLATE-licao.md
-
-.kiro/specs/trilha-engenharia-ia/   # requirements, design e plano de tarefas que geraram a trilha
 ```
 
 ## Visão geral dos módulos

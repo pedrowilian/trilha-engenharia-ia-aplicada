@@ -26,3 +26,16 @@ Thumbs.db
 
 # --- Rascunhos locais de autoria (não fazem parte do currículo publicado) ---
 .scratch/
+
+# --- Ferramentas de IA / assistentes de código (ficam só local) ---
+# Andaimes de autoria, não fazem parte do currículo. O conteúdo publicado é o de trilha/.
+.kiro/
+.claude/
+.cursor/
+.cursorrules
+.aider*
+.windsurf/
+.github/copilot-instructions.md
+CLAUDE.md
+AGENTS.md
+GEMINI.md

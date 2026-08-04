@@ -215,4 +215,7 @@
 3. Você estuda, **faz perguntas**, e quando se sentir seguro marca a aula como concluída no índice de progresso.
 4. As aulas marcadas com `Δ` são aprofundamentos teóricos que vão **além** da ementa de referência — é onde está boa parte do seu diferencial.
 
-> Esta ementa é a visão de estudo. A estrutura técnica completa (template de aula, pré-requisitos formais, mapa de competências e validação) está nos documentos da spec em `.kiro/specs/trilha-engenharia-ia/`.
+> Esta ementa é a visão de estudo. A estrutura técnica completa está no repositório: o
+> template de aula em [`TEMPLATE-licao.md`](TEMPLATE-licao.md), o mapa de competências em
+> [`mapa-de-competencias.md`](mapa-de-competencias.md) e a validação automatizada em
+> [`tools/validar_trilha.py`](tools/validar_trilha.py).
