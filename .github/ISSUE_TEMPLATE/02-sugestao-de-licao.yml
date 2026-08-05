@@ -1,0 +1,52 @@
+name: "Sugestão de lição ou tópico"
+description: Um tópico que falta na trilha, ou uma lição que deveria ser dividida/reordenada.
+title: "[trilha] "
+labels: ["currículo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de abrir: confira o [índice](https://github.com/pedrowilian/trilha-engenharia-ia-aplicada/blob/main/trilha/README.md)
+        e a [ementa](https://github.com/pedrowilian/trilha-engenharia-ia-aplicada/blob/main/trilha/EMENTA.md).
+        O tópico pode já estar coberto sob outro nome.
+
+        Duas regras estruturais que a sugestão precisa respeitar:
+        **uma lição = um único tópico**, e nenhuma lição usa conceito que não tenha sido
+        ensinado antes dela (o validador checa esse DAG).
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de sugestão
+      options:
+        - Tópico ausente — merece lição nova
+        - Lição existente cobre demais e deveria ser dividida
+        - Ordem errada — a lição depende de algo ensinado depois
+        - Aprofundar uma lição existente
+    validations:
+      required: true
+
+  - type: input
+    id: modulo
+    attributes:
+      label: Módulo
+      description: Em qual dos 17 módulos isso entra (M00–M16). Se não souber, escreva "não sei".
+      placeholder: "M07"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposta
+    attributes:
+      label: A proposta
+      description: Qual é o tópico e por que ele é necessário para o cargo de AI Engineer.
+    validations:
+      required: true
+
+  - type: textarea
+    id: prerequisitos
+    attributes:
+      label: Pré-requisitos e posição
+      description: De quais lições existentes isso depende, e depois de qual ela deveria entrar.
+    validations:
+      required: false

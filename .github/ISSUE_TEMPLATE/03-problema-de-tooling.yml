@@ -1,0 +1,63 @@
+name: "Problema de tooling"
+description: Validador, gerador de índice, helper de progresso, capstone ou CI se comportando errado.
+title: "[tooling] "
+labels: ["tooling"]
+body:
+  - type: dropdown
+    id: ferramenta
+    attributes:
+      label: Ferramenta
+      options:
+        - validar_trilha.py (validador de conformidade)
+        - gerar_indice.py (índice navegável)
+        - progresso.py (estado de estudo)
+        - capstone (Micro-SaaS RAG + Agente + MCP)
+        - CI / GitHub Actions
+        - Instalação / dependências
+    validations:
+      required: true
+
+  - type: textarea
+    id: comando
+    attributes:
+      label: Comando executado
+      description: A linha exata que você rodou, a partir da raiz do repositório.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: saida
+    attributes:
+      label: Saída obtida
+      description: Cole a saída completa, incluindo o traceback se houver.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Saída esperada
+      description: O que você esperava que acontecesse.
+    validations:
+      required: true
+
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Versão do Python e sistema operacional.
+      placeholder: "Python 3.12.3 · Ubuntu 24.04 (WSL2)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checagens
+    attributes:
+      label: Checagens antes de abrir
+      options:
+        - label: Instalei as duas listas de dependências (`trilha/requirements.txt` e `trilha/tools/requirements.txt`).
+          required: true
+        - label: Estou rodando os comandos a partir da raiz do repositório.
+          required: true

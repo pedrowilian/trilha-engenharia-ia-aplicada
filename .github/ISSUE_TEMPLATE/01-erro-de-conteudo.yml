@@ -1,0 +1,56 @@
+name: "Erro de conteúdo"
+description: Algo errado, impreciso ou confuso na teoria, num exemplo resolvido, num exercício ou numa solução.
+title: "[conteúdo] "
+labels: ["conteúdo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por revisar. Erro de conteúdo é o tipo de issue mais valioso aqui — uma
+        lição errada propaga para todas as que dependem dela.
+
+  - type: input
+    id: licao
+    attributes:
+      label: Lição
+      description: "Número e slug, como aparecem no índice. Ex.: `013-gradient-descent`."
+      placeholder: "013-gradient-descent"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: onde
+    attributes:
+      label: Onde está o erro
+      options:
+        - Seção teórica (motivação / princípio / conceito)
+        - Exemplo resolvido em Python
+        - Enunciado ou critério de aceite do exercício
+        - Solução de referência ou .saida.txt
+        - Ementa / mapa de competências / índice
+    validations:
+      required: true
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: O que está errado
+      description: Cite o trecho e explique o problema. Se for erro de matemática ou de código, mostre a conta ou a saída.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correcao
+    attributes:
+      label: Correção proposta
+      description: Opcional. Se souber a forma certa, escreva aqui — encurta muito o caminho.
+    validations:
+      required: false
+
+  - type: textarea
+    id: referencia
+    attributes:
+      label: Referência
+      description: Opcional. Livro, paper ou documentação que sustenta a correção.
+    validations:
+      required: false

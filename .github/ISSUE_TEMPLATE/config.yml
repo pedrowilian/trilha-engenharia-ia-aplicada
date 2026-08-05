@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Como contribuir
+    url: https://github.com/pedrowilian/trilha-engenharia-ia-aplicada/blob/main/.github/CONTRIBUTING.md
+    about: Padrão de lição, formato de commit e o que rodar antes de abrir um PR.
+  - name: Índice das 104 lições
+    url: https://github.com/pedrowilian/trilha-engenharia-ia-aplicada/blob/main/trilha/README.md
+    about: Procure aqui o número da lição (NNN) antes de abrir a issue.
