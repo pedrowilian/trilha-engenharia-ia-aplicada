@@ -1,0 +1,60 @@
+name: CI
+
+# Verifica que o currículo publicado está íntegro: as 104 lições conformes ao
+# template, as soluções de referência executando e batendo com o .saida.txt, o
+# DAG de pré-requisitos válido, os testes do tooling passando e o índice
+# navegável em dia.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  conformidade:
+    name: Conformidade (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.11 é o piso declarado no README; 3.12 é o ambiente de autoria.
+        python-version: ['3.11', '3.12']
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configura Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: |
+            trilha/requirements.txt
+            trilha/tools/requirements.txt
+
+      - name: Instala dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r trilha/requirements.txt -r trilha/tools/requirements.txt
+
+      - name: Valida conformidade das 104 lições
+        run: python3 trilha/tools/validar_trilha.py
+
+      - name: Testes do validador (unitários + propriedade)
+        run: python3 -m pytest trilha/tools/tests/ -q
+
+      - name: Teste de integração do capstone
+        run: python3 -m pytest trilha/capstone/tests/ -q
+
+      - name: Índice navegável está atualizado
+        run: python3 trilha/tools/gerar_indice.py --check
