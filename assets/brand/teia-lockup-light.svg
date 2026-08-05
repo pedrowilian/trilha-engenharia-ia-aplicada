@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 56" width="188" height="56" role="img" aria-labelledby="teia-lockup-light-title">
+  <title id="teia-lockup-light-title">TEIA — Trilha de Engenharia de IA Aplicada</title>
+  <!-- Variante para fundo claro. Diferencas em relacao a variante dark:
+       arestas em neutro (#6E7681), nos e wordmark em grafite (#0D1117), e o no
+       terminal ciano ganha anel grafite — #22D3EE sozinho da ~1.8:1 sobre branco
+       e some. O wordmark e <path>, nunca <text>. -->
+
+  <!-- Simbolo: DAG de 5 nos, 32x32 escalado 1.5x -->
+  <g transform="translate(4 2) scale(1.5)">
+    <g fill="none" stroke="#6E7681" stroke-width="2.5" stroke-linecap="round">
+      <path d="M5 28 L11 22" />
+      <path d="M11 22 L16 10" />
+      <path d="M11 22 L21 20" />
+      <path d="M16 10 L27 6" />
+      <path d="M21 20 L27 6" />
+    </g>
+    <g fill="#0D1117">
+      <circle cx="5" cy="28" r="3" />
+      <circle cx="11" cy="22" r="3" />
+      <circle cx="16" cy="10" r="3" />
+      <circle cx="21" cy="20" r="3" />
+    </g>
+    <circle cx="27" cy="6" r="3" fill="#22D3EE" stroke="#0D1117" stroke-width="1.5" />
+  </g>
+
+  <!-- Wordmark T E I A: altura de caixa alta 24 (y 16 a 40), traco 3.5 -->
+  <g fill="none" stroke="#0D1117" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M72 16 H92 M82 16 V40" />
+    <path d="M106 16 V40 M106 16 H123 M106 28 H120 M106 40 H123" />
+    <path d="M137 16 V40" />
+    <path d="M151 40 L162 16 L173 40 M156.5 29 H167.5" />
+  </g>
+</svg>

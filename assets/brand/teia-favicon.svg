@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-labelledby="teia-favicon-title">
+  <title id="teia-favicon-title">TEIA</title>
+  <!-- Favicon: geometria simplificada. A cauda A->B do simbolo completo e
+       removida e a celula fechada (B, C, D, E) e ampliada 1.42x para preencher
+       o quadro e sobreviver a 16px. Os tracos e os raios escalam com o
+       transform, de proposito. -->
+  <g transform="translate(4.64 4.64) scale(1.42) translate(-11 -6)">
+    <g fill="none" stroke="#7DD3FC" stroke-width="2.5" stroke-linecap="round">
+      <path d="M11 22 L16 10" />
+      <path d="M11 22 L21 20" />
+      <path d="M16 10 L27 6" />
+      <path d="M21 20 L27 6" />
+    </g>
+    <g fill="#E6EDF3">
+      <circle cx="11" cy="22" r="3" />
+      <circle cx="16" cy="10" r="3" />
+      <circle cx="21" cy="20" r="3" />
+    </g>
+    <circle cx="27" cy="6" r="3" fill="#22D3EE" />
+  </g>
+</svg>
